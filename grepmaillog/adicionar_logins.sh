@@ -14,7 +14,7 @@
 
 #cat /var/log/maillog | grep 'unknown user' | gawk '{print $7}' | sort | sed "s/'//g;s/\"//g" | awk -F',' '{print $1}'  | sed 's/.*(//' | awk -F'@' '{print $1}' | sed 's/.*)//' | \
 # uniq | sort >> /root/logins_com_frequencia1.txt
-#
+
 #cat /var/log/maillog | grep 'given' | gawk '{print $12}' | sed 's/.$//' | sort | uniq  >> /root/cenhas_furados.txt
 
 cat /var/log/mail.log | grep user= | sed 's|.*=||' | awk -F'@' '{print $1}' | sort | uniq >>/root/logins.txt
