@@ -1,0 +1,823 @@
+    1  chkconfig firewalld off
+    2  sed -i "s/SELINUX=.*/SELINUX=disabled/" /etc/selinux/config
+    3  yum install telnet mc wget net-tools vim deltarpm lsof psmisc
+    4  ping ya.ru
+    5  ping 8.8.8.8
+    6  vi /etc/sysconfig/network-scripts/ifcfg-enp0s3 
+    7  systemctl restart network
+    8  ping ya.ru
+    9  yum install telnet mc wget net-tools vim deltarpm lsof psmisc
+   10  vim ~/.vimrc
+   11  yum install -y git-all
+   12  date 
+   13  reboot
+   14  git status
+   15  poweroff
+   16  yum info postfix
+   17  yum update postfix
+   18  yum info postfix3
+   19  pstree
+   20  yum remove postfix
+   21  vim /etc/yum.repos.d/gf.repo
+   22  yum install postfix3
+   23  postconf -d | grep mail_version
+   24  systemctl enable postfix
+   25  vim /etc/yum.repos.d/dovecot.repo 
+   26  yum install dovecot -y
+   27  dovecot --version
+   28  systemctl enable dovecot
+   29  mkdir default_confs && cp -R /etc/postfix/ ~/default_confs && cp -R /etc/dovecot/ ~/default_confs
+   30  reboot
+   31  pstree
+   32  poweroff
+   33  printf 'username\0username\0password' | mmencode
+   34  yum install mmencode
+   35  yum install uuencode
+   36  yum install sharutils
+   37  printf 'username\0username\0password' | uuencode
+   38  printf 'username\0username\0password' | mimeencode
+   39  printf 'username\0username\0password' | mimencode
+   40  printf 'username\0username\0password' | base64
+   41  postconf -a
+   42  postconf $queue_directory
+   43  postconf queue_directory
+   44  doveadm pw -s ssha256
+   45  doveadm pw -s ssha256 -p sumarepassword
+   46  cat /var/log/maillog 
+   47  [root@git-mailer ~]# doveadm pw -s ssha256 -p sumarepassword
+   48  cat /var/log/maillog | cut -d : -f 1-4,8-10
+   49  poweroff
+   50  exit
+   51  echo "setterm -term linux -fore cyan -store" >>~./bashrc
+   52  echo "setterm -term linux -fore cyan -store" >>~/.bashrc
+   53  exit
+   54  su zakaz
+   55  echo "setterm -term linux -fore cyan -store" >>~/.bashrc
+   56  exit
+   57  whoami
+   58  su zakaz
+   59  exit
+   60  mc
+   61  exit
+   62  cd /usr/local/src && git clone https://github.com/garabik/grc.git && sh grc/install.sh
+   63  cd /usr/local/src &&git clone https://github.com/garabik/grc.git && sh grc/install.sh
+   64  git clone https://github.com/garabik/grc.git
+   65  git --help
+   66  git clone
+   67  ll
+   68  pwd
+   69  ip a
+   70  setterm
+   71  setterm -term linux -fore cyan
+   72  setterm -term linux -fore yellow
+   73  echo $TERM
+   74  su zakaz
+   75  su zakaz
+   76  setterm -term linux -fore red
+   77  su zakaz
+   78  cat /var/log/maillog 
+   79  git config --list --show-origin
+   80  git config --list
+   81  git config --global user.name "ilhadonorte"
+   82  git config --global user.email ilhadonorte@gmail.com
+   83  cd /etc/dovecot/
+   84  ls
+   85  git init
+   86  git remote add dovecot https://github.com/ilhadonorte/dovecot.git
+   87  git config --list
+   88  git pull https://github.com/ilhadonorte/dovecot.git
+   89  yum install grc
+   90  git status
+   91  cd ..
+   92  cd postfix/
+   93  git init
+   94  git remote add dovecot https://github.com/ilhadonorte/postfix.git
+   95  git pull https://github.com/ilhadonorte/postfix.git
+   96  useradd zakaz -m
+   97  passwd zakaz
+   98  su zakaz
+   99  whoami
+  100  vim ~/.bashrc 
+  101  exit
+  102  cat /var/log/maillog 
+  103  systemctl status dovecot
+  104  systemctl status dovecot -l
+  105  systemctl status postfix -l
+  106  postfix status
+  107  pwgen 16
+  108  yum install pwgen
+  109  vi ~/.bashrc 
+  110  su zakaz
+  111  systemctl status postfix -l
+  112  poweroff
+  113  systemctl status dovecot
+  114  systemctl status dovecot -l
+  115  systemctl status postfix -l
+  116  su zakaz
+  117  [13~
+  118  select-editor
+  119  echo $EDITOR
+  120  su zakaz
+  121  su zakaz
+  122  pstree
+  123  yum -y install bind bind-utils 
+  124  systemctl start named
+  125  systemctl enable named
+  126  systemctl status named
+  127  yum install mailx -y 
+  128  yum install mutt -y
+  129  mutt
+  130  systemctl restart postfix
+  131  systemctl status postfix -l
+  132  systemctl restart postfix
+  133  systemctl status postfix -l
+  134  mutt
+  135  tail -F -n 35 /var/log/maillog
+  136  ip a
+  137   vim /etc/named.conf
+  138  cp /etc/named.conf ~/default_confs/
+  139   vim /etc/named.conf
+  140   vim /etc/named/
+  141   vim /etc/named/sumare.ru
+  142   vim /etc/named/sumare.ru.zone
+  143  chown root:named /etc/named/sumare.ru.zone
+  144  chmod 0640  /etc/named/sumare.ru.zone
+  145  systemctl restart named
+  146  systemctl status named -l
+  147  systemctl restart named
+  148  systemctl status named -l
+  149   vim /etc/named.conf
+  150  systemctl restart named
+  151  systemctl status named -l
+  152   vim /etc/named/sumare.ru.zone
+  153  systemctl restart named
+  154  systemctl status named -l
+  155   vim /etc/named/sumare.ru.zone
+  156  systemctl restart named
+  157  systemctl status named -l
+  158  vim /etc/sysconfig/network-scripts/ifcfg-enp0s3
+  159  systemctl restart network
+  160  host -t mx sumare.ru      
+  161  host -t a sumare.ru      
+  162  vim /etc/postfix/main.cf
+  163  mailx -s "`date --rfc-3339='date'` connections semanal report" -r root@sumare.ru root@sumare.ru
+  164  vim /etc/postfix/main.cf
+  165  mailx -s "`date --rfc-3339='date'` connections semanal report" -r root@sumare.ru root@sumare.ru
+  166  date --rfc-3339 | mailx -s "`date --rfc-3339='date'` connections semanal report" -r root@sumare.ru root@sumare.ru
+  167  date | mailx -s "`date --rfc-3339='date'` connections semanal report" -r root@sumare.ru root@sumare.ru
+  168  vim /etc/postfix/main.cf
+  169  vim/etc/dovecot/dovecot.conf
+  170  vim /etc/dovecot/dovecot.conf
+  171  vim /etc/dovecot/conf.d/10-master.conf
+  172  vim /etc/dovecot/conf.d/10-auth.conf
+  173  ll
+  174  vim /etc/dovecot/conf.d/auth-passwdfile.conf.ext 
+  175  vim /etc/dovecot/users
+  176  echo zakaz@sumare.ru:$(doveadm pw -s CRYPT -p password):::::: >> /etc/dovecot/users
+  177  echo info@sumare.ru:$(doveadm pw -s CRYPT -p password):::::: >> /etc/dovecot/users
+  178  vim /etc/dovecot/users
+  179  pstree
+  180  ps axuww
+  181  ps axuww | grep dove
+  182  cat /etc/groups
+  183  cat /etc/group
+  184  Vim /etc/dovecot/conf.d/10-mail.conf
+  185  vim /etc/dovecot/conf.d/10-mail.conf
+  186  cat /etc/passwd
+  187  useradd info -m
+  188  cat /etc/passwd
+  189  systemctl restart dovecot && systemctl restart postfix
+  190  vim /etc/dovecot/conf.d/10-mail.conf
+  191  vim /etc/dovecot/conf.d/10-master.conf
+  192  echo export EDITOR=vim >>~/.bashrc
+  193  vim /etc/dovecot/conf.d/10-auth.conf
+  194  systemctl restart dovecot && systemctl restart postfix
+  195  vim /etc/postfix/main.cf
+  196  systemctl restart dovecot && systemctl restart postfix
+  197  doveadm auth login zakaz
+  198  vim /etc/dovecot/conf.d/auth-passwdfile.conf.ext 
+  199  vim /etc/dovecot/conf.d/10-auth.conf
+  200  vim /etc/dovecot/conf.d/auth-static.conf.ext 
+  201  systemctl restart dovecot && systemctl restart postfix
+  202  vim /etc/dovecot/conf.d/auth-static.conf.ext 
+  203  systemctl restart dovecot && systemctl restart postfix
+  204  vim /etc/dovecot/conf.d/10-mail.conf
+  205  systemctl restart dovecot && systemctl restart postfix
+  206  vim /etc/dovecot/conf.d/auth-static.conf.ext 
+  207  systemctl restart dovecot && systemctl restart postfix
+  208  vim /etc/dovecot/conf.d/10-auth.conf
+  209  systemctl restart dovecot && systemctl restart postfix
+  210  vim /etc/dovecot/conf.d/auth-static.conf.ext 
+  211  vim /etc/dovecot/conf.d/10-mail.conf
+  212  systemctl restart dovecot && systemctl restart postfix
+  213  vim /etc/dovecot/conf.d/10-mail.conf
+  214  vim /etc/postfix/main.cf
+  215  systemctl restart dovecot && systemctl restart postfix
+  216  vim /etc/dovecot/conf.d/10-mail.conf
+  217  systemctl restart dovecot && systemctl restart postfix
+  218  poweroff
+  219  mc
+  220  mc
+  221  mkdir /sumarepochta
+  222  pstree
+  223  ps ax
+  224  ps axu
+  225  systemctl restart dovecot && systemctl restart postfix
+  226  poweroff
+  227  tail -F -n 35 /var/log/maillog
+  228  vim /etc/dovecot/conf.d/10-mail.conf
+  229  vim cat /etc/postfix/main.cf
+  230  vim /etc/postfix/main.cf
+  231  vim /etc/dovecot/dovecot.conf
+  232  vim /etc/dovecot/conf.d/10-master.conf
+  233  vim /etc/dovecot/conf.d/20-lmtp.conf
+  234  vim /etc/dovecot/conf.d/10-auth.conf 
+  235  chmod 777 /sumarepochta/
+  236  vim /etc/dovecot/dovecot.conf
+  237  vim /etc/dovecot/conf.d/10-mail.conf
+  238  vim /etc/dovecot/conf.d/10-logging.conf 
+  239  man groupadd 
+  240  groupadd -g 37100 sumarepochta
+  241  groupdel sumarepochta
+  242  man useradd
+  243  cat /etc/passwd
+  244  chown -R sumarepochta:sumarepochta /sumarepochta/
+  245  vim /etc/dovecot/conf.d/10-mail.conf
+  246  userdel zakaz
+  247  ps axuww | grep 2301
+  248  vim /etc/dovecot/conf.d/10-mail.conf
+  249  history | grep echo
+  250  office@sumare.ru:$(doveadm pw -s CRYPT -p password):::::: >> /etc/dovecot/users
+  251  ech office@sumare.ru:$(doveadm pw -s CRYPT -p password):::::: >> /etc/dovecot/users
+  252  echo office@sumare.ru:$(doveadm pw -s CRYPT -p password):::::: >> /etc/dovecot/users
+  253  vim /etc/dovecot/dovecot.conf
+  254  vim /etc/dovecot/conf.d/10-auth.conf 
+  255  chmod -R 777 /sumarepochta/
+  256  mc
+  257  tail -F -n 35 /var/log/maillog
+  258  doveconf
+  259  doveconf | grep home
+  260  doveconf | grep mail_
+  261  systemctl restart dovecot && systemctl restart postfix
+  262  poweroff
+  263  vim /etc/dovecot/conf.d/10-mail.conf
+  264  vim /etc/dovecot/conf.d/auth-passwdfile.conf.ext 
+  265  vim /etc/dovecot/conf.d/10-auth.conf 
+  266  vim /etc/dovecot/conf.d/auth-static.conf.ext 
+  267  vim /etc/dovecot/conf.d/10-auth.conf 
+  268  vim /etc/dovecot/conf.d/auth-passwdfile.conf.ext 
+  269  cat * > all.txt
+  270  ip a
+  271  cat * > all.txt
+  272  poweroff
+  273  ll
+  274  mc
+  275  history 
+  276  export HISTTIMEFORMAT="%y/%h/%d/-%H:%M:%S "
+  277  ll
+  278  history 
+  279  export HISTTIMEFORMAT="%Y-%h-%d,%H:%M:%S "
+  280  history 
+  281  ip a
+  282  poweroff
+  283  mc
+  284  tail -F -n 35 /var/log/maillog
+  285  cat /etc/passwd
+  286  dovecot -a | mail_home 
+  287  dovecot -a | grep mail_home 
+  288  systemctl restart dovecot && systemctl restart postfix
+  289  rmuser info
+  290  deluser info
+  291  userdel info
+  292  userdel zakaz
+  293  systemctl restart dovecot && systemctl restart postfix
+  294  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru
+  295  doveadm auth test -x service=smtp -x rip=127.0.0.1 info@sumare.ru
+  296  man doveadm auth
+  297  doveadm auth test -x service=smtp password=password -x rip=127.0.0.1 info@sumare.ru
+  298  doveadm auth test -x service=smtp password=password -x rip=127.0.0.1 zakaz@sumare.ru
+  299  man doveadm auth
+  300  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru password
+  301  doveadm auth test -x service=smtp -x rip=127.0.0.1 info@sumare.ru password
+  302  doveadm auth test -x service=smtp -x rip=127.0.0.1 asat@sumare.ru password
+  303  doveadm user asat
+  304  doveadm user zakaz
+  305  doveadm user zakaz@sumare.ru
+  306  systemctl restart dovecot && systemctl restart postfix
+  307  doveadm user zakaz@sumare.ru
+  308  doveadm user zakaz
+  309  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru password
+  310  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz password
+  311  dovecot -a | grep auth_username_format
+  312  systemctl restart dovecot && systemctl restart postfix
+  313  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz password
+  314  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru password
+  315  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz password
+  316  doveadm auth test -x service=smtp -x rip=127.0.0.1 info password
+  317  doveadm auth test -x service=smtp -x rip=127.0.0.1 info@sumare.ru password
+  318  systemctl restart dovecot && systemctl restart postfix
+  319  doveadm mailbox list --user zakaz
+  320  doveadm mailbox list --user info
+  321  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r postmaster@sumare.ru m79586305729@yahoo.com
+  322  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r postmaster@sumare.ru zakaz@sumare.ru
+  323  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r postmaster@sumare.ru info@sumare.ru
+  324  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r info@sumare.ru zakaz@sumare.ru
+  325  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r zakaz@sumare.ru info@sumare.ru
+  326  telnet sumare.ru imap 
+  327  yum install openssl
+  328  openssl s_client -connect imap.mail.yahoo.com:993 -starttls imap
+  329  TAG1 CAPABILITY
+  330  openssl s_client -connect imap.mail.yahoo.com:993 -ssl imap
+  331  openssl s_client -connect imap.mail.yahoo.com:993 -starttls imap
+  332  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r postmaster@sumare.ru m79586305729@yahoo.com
+  333  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r postmaster@sumare.ru oplblitz@mail.ru
+  334  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r info@sumare.ru oplblitz@mail.ru
+  335  systemctl restart dovecot && systemctl restart postfix
+  336  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru password
+  337  doveadm auth test -x service=imap -x rip=127.0.0.1 zakaz@sumare.ru password
+  338  postconf | grep local_recipient_maps
+  339  postconf | grep recipient_maps
+  340  postconf | grep virtual
+  341  systemctl restart dovecot && systemctl restart postfix
+  342  doveadm auth test -x service=smtp -x rip=127.0.0.1 zakaz@sumare.ru password
+  343  doveadm auth test -x service=imap -x rip=127.0.0.1 zakaz@sumare.ru password
+  344  doveadm auth test -x service=imap -x rip=127.0.0.1 info@sumare.ru password
+  345  doveadm auth test -x service=smtp -x rip=127.0.0.1 info@sumare.ru password
+  346  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r info@sumare.ru zakaz@sumare.ru
+  347  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r info@sumare.ru info@sumare.ru
+  348  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r zakaz@sumare.ru info@sumare.ru
+  349  cd /etc/dovecot/
+  350  git add -A
+  351  git commit -m "lec001 simple working config: passwrd-file, lmtp, sdbox, local_recp = off "
+  352  git push dovecot master
+  353  cd /etc/postfix/
+  354  git add -A
+  355  git commit -m "lec001 simple working config: passwrd-file, lmtp, sdbox, local_recp = off "
+  356  git push postfix master
+  357  git config --list --show-origin
+  358  git status
+  359  man git
+  360  git-remote
+  361  git remote
+  362  ll
+  363  git remote add postfix https://github.com/ilhadonorte/postfix.git
+  364  git remote
+  365  git status
+  366  git config --list --show-origin
+  367  git push postfix master
+  368  git add -A
+  369  git commit -m "lec001 simple working config: passwrd-file, lmtp, sdbox, local_recp = off "
+  370  git push postfix master
+  371  git status
+  372  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r info@sumare.ru zakaz@sumare.ru
+  373  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r office@sumare.ru zakaz@sumare.ru
+  374  date | mailx -s "`date --rfc-3339='date'` test e-mail" -r zakaz@sumare.ru office@sumare.ru
+  375  git diff
+  376  cd /etc/dovecot/
+  377  git diff
+  378  git log
+  379  git diff 591b43afb8e45651182fdde7f07c424489003f29 eed7a881c578629454a8a0fe76cc407518620708 dovecot.conf
+  380  git diff 591b43afb8e45651182fdde7f07c424489003f29 eed7a881c578629454a8a0fe76cc407518620708 /conf.d/10-mail.conf
+  381  git diff 591b43afb8e45651182fdde7f07c424489003f29 eed7a881c578629454a8a0fe76cc407518620708 conf.d/10-mail.conf
+  382  systemctl restart dovecot && systemctl restart postfix
+  383  doveadm acl debug -u zakaz@sumare.ru Public/zakaz@sumare.ru
+  384  systemctl restart dovecot && systemctl restart postfix
+  385  vim /etc/dovecot/conf.d/10-mail.conf
+  386  vim /etc/dovecot/conf.d/10-auth.conf 
+  387  vim /etc/dovecot/conf.d/10-logging.conf 
+  388  vim /etc/dovecot/conf.d/10-auth.conf 
+  389  vim /etc/dovecot/conf.d/10-mail.conf
+  390  vim /etc/dovecot/conf.d/10-auth.conf 
+  391  vim /etc/dovecot/users 
+  392  vim /etc/dovecot/conf.d/10-logging.conf 
+  393  vim /etc/dovecot/conf.d/10-mail.conf
+  394  vim /etc/dovecot/users 
+  395  vim /etc/dovecot/dovecot.conf 
+  396  vim /etc/postfix/main.cf
+  397  vim /etc/dovecot/users 
+  398  vim /etc/postfix/main.cf
+  399  vim /etc/dovecot/users 
+  400  git add -A
+  401  cd /etc/postfix/
+  402  git push postfix master
+  403  git log
+  404  git diff 6fea454c520d5693188780445c39968d865801ce 0624599d5d36543262041dda370e6391382ea269
+  405  git diff 6fea454c520d5693188780445c39968d865801ce 0624599d5d36543262041dda370e6391382ea269 main.cf
+  406  vim /etc/dovecot/conf.d/10-mail.conf
+  407  vim /etc/dovecot/conf.d/10-logging.conf 
+  408  vim /etc/dovecot/conf.d/10-mail.conf
+  409  poweroff
+  410  systemctl restart dovecot && systemctl restart postfix
+  411  doveadm acl debug -u zakaz@sumare.ru Public/zakaz@sumare.ru
+  412  doveadm acl debug -u zakaz@sumare.ru Public
+  413  doveadm acl debug -u zakaz@sumare.ru
+  414  man doveadm acl
+  415  doveadm acl get -u zakaz@sumare.ru pastanova
+  416  doveadm acl get -u office@sumare.ru pastanova
+  417  doveadm acl get -u zakaz@sumare.ru user=office@sumare.ru pastanova
+  418  systemctl restart dovecot && systemctl restart postfix
+  419  systemctl status dovecot –l
+  420  systemctl restart dovecot && systemctl restart postfix
+  421  systemctl status dovecot –l
+  422  doveadm acl get -u zakaz@sumare.ru INBOX/toshare
+  423  doveadm acl get -u zakaz@sumare.ru newfolder
+  424  doveadm acl rights -u zakaz@sumare.ru newfolder
+  425  doveadm acl rights -u zakaz@sumare.ru newfolder user=office@sumare.ru
+  426  doveadm acl get -A "Public/TestFolder"
+  427  doveadm acl get -A "Public/"
+  428  doveadm acl get -A "Public"
+  429  doveadm acl rights -u zakaz@sumare.ru newfolder "user=office@sumare.ru"
+  430  doveadm acl set -A "Public" "anyone" lookup read
+  431  doveadm acl set -A "Public/" "anyone" lookup read
+  432  systemctl restart dovecot && systemctl restart postfix
+  433  doveadm acl get -A "sumarepublic"
+  434  doveadm acl get -u zakaz@sumare.ru "sumarepublic"
+  435  doveadm acl get -u zakaz@sumare.ru newfolder
+  436  doveadm mailbox list -u zakaz@sumare.ru
+  437  doveadm mailbox list INBOX/zakaz@sumare.ru
+  438  doveadm mailbox list qwerty/zakaz@sumare.ru
+  439  doveadm mailbox list qwerty\zakaz@sumare.ru
+  440  doveadm acl debug -u zakaz@sumare.ru sumarepublic/zakaz@sumare.ru
+  441  doveadm acl debug -u zakaz@sumare.ru sumarepublic
+  442  doveadm acl get -u info@sumare.ru newfolder
+  443  doveadm acl get -u info@sumare.ru sumarepublic
+  444  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  445  doveadm -f table mailbox status -u zakaz
+  446  doveadm -f table mailbox status -u zakaz@sumare.ru
+  447  doveadm  mailbox status -u zakaz@sumare.ru
+  448  doveadm  mailbox status -u "zakaz@sumare.ru"
+  449  doveadm  mailbox status -u zakaz@sumare.ru A
+  450  doveadm  mailbox status -u zakaz@sumare.ru A INBOX
+  451  doveadm  mailbox status -u zakaz@sumare.ru ALL INBOX
+  452  doveadm  mailbox status -u zakaz@sumare.ru '*' INBOX
+  453  doveadm  mailbox status -u zakaz@sumare.ru * INBOX
+  454  doveadm  mailbox status -u zakaz@sumare.ru "messages vsize" INBOX
+  455  doveadm  mailbox status -u zakaz@sumare.ru "" INBOX
+  456  doveadm  mailbox status -u zakaz@sumare.ru "all" INBOX
+  457  systemctl restart dovecot && systemctl restart postfix
+  458  pwgen 16
+  459  yum install pwgen
+  460  poweroff
+  461  vim /etc/dovecot/dovecot.conf 
+  462  vim /etc/dovecot/global-acls1
+  463  vim /etc/dovecot/conf.d/10-mail.conf
+  464  vim /etc/dovecot/conf.d/90-acl.conf 
+  465  vim /etc/dovecot/conf.d/10-mail.conf
+  466  doveadm acl debug -u zakaz@sumare.ru Public/zakaz@sumare.ru
+  467  doveadm acl debug -u zakaz@sumare.ru *
+  468  doveadm acl debug -u zakaz@sumare.ru "*"
+  469  man doveadm-acl
+  470  vim /etc/dovecot/dovecot.conf 
+  471  doveadm acl debug -u zakaz@sumare.ru Public/zakaz@sumare.ru
+  472  vim /etc/dovecot/conf.d/10-mail.conf
+  473  man doveadm mailbox subscrube
+  474  vim /etc/dovecot/dovecot.conf 
+  475  mc
+  476  tail -F -n 35 /var/log/maillog
+  477  vim .bashrc 
+  478  mc
+  479  tail -F -n 35 /var/log/maillog
+  480  [32;15;9M
+  481  vim /etc/dovecot/dovecot.conf 
+  482  git remote
+  483  cd /etc/dovecot/
+  484  git remote
+  485  git add .
+  486  git commit -m "lec002 recycled bin added"
+  487  git log
+  488  git push
+  489  git push dovecot master
+  490  man git push
+  491  git push dovecot master
+  492  cd /etc/postfix/
+  493  git remote
+  494  git add .
+  495  git commit -m "lec002 recycled bin added"
+  496  git push postfix master
+  497  man doveadm acl rigths
+  498  man doveadm mailbox
+  499  vim /etc/dovecot/dovecot.conf 
+  500  vim /etc/dovecot/conf.d/10-mail.conf
+  501  cat /etc/passwd
+  502  cd /sumarepochta
+  503  ll
+  504  chown -R sumarepochta:sumarepochta /sumarepochta/sumarepublic/
+  505  ll
+  506  chmod -R 777 /sumarepochta/sumarepublic/
+  507  ll
+  508  vim /etc/dovecot/conf.d/10-mail.conf
+  509  vim /etc/dovecot/conf.d/90-acl.conf 
+  510  vim /etc/dovecot/dovecot.conf 
+  511  vim /etc/dovecot/conf.d/10-mail.conf
+  512  cd /etc/dovecot/
+  513  git pull
+  514  git remote
+  515  git pull https://github.com/ilhadonorte/dovecot.git
+  516  systemctl restart dovecot && systemctl restart postfix
+  517  doveadm mailbox list -u zakaz@sumare.ru
+  518  doveadm mailbox list
+  519  man doveadm mailbox list
+  520  doveadm mailbox list -u zakaz@sumare.ru -7
+  521  doveadm mailbox list -u zakaz@sumare.ru -8
+  522  doveadm  mailbox status -u zakaz@sumare.ru "all" .EXPUNGED
+  523  doveadm  -f table mailbox status -u zakaz@sumare.ru "all" .EXPUNGED
+  524  doveadm search -u zakaz@sumare.ru  mailbox .EXPUNGED
+  525  doveadm search -u zakaz@sumare.ru mailbox .EXPUNGED
+  526  doveadm mailbox create -u zakaz@sumare.ru semsubscribe
+  527  doveadm mailbox list -u zakaz@sumare.ru -8
+  528  doveadm mailbox create -u zakaz@sumare.ru -s commsubscribe
+  529  doveadm mailbox list -u zakaz@sumare.ru -8
+  530  history | tail
+  531  doveadm acl get -u zakaz@sumare.ru 
+  532  doveadm acl get -u zakaz@sumare.ru newfolder
+  533  doveadm acl rigths -u zakaz@sumare.ru newfolder
+  534  doveadm acl rigths -u zakaz newfolder
+  535  doveadm acl rigths -u zakaz@sumare.ru newfolder user=office@sumare.ru
+  536  doveadm acl rigths -u zakaz@sumare.ru newfolder 
+  537  doveadm acl rigths -u zakaz@sumare.ru INBOX 
+  538  doveadm acl rigths -A INBOX 
+  539  doveadm acl rigths -A doveadm acl get -u zakaz@sumare.ru newfolder
+  540  doveadm acl get -u zakaz@sumare.ru newfolder
+  541  doveadm acl add -u zakaz@sumare.ru newfolder user=office@sumare.ru lookup
+  542  doveadm acl get -u zakaz@sumare.ru newfolder
+  543  doveadm acl remove -u zakaz@sumare.ru newfolder user=office@sumare.ru lookup
+  544  doveadm acl get -u zakaz@sumare.ru newfolder
+  545  doveadm mailbox list -u zakaz@sumare.ru -8
+  546  doveadm mailbox unsubscribe -u zakaz@sumare.ru semsubscribe
+  547  doveadm mailbox unsubscribe -u zakaz@sumare.ru Trash
+  548  doveadm mailbox subscribe -u zakaz@sumare.ru semsubscribe
+  549  doveadm mailbox list -u zakaz@sumare.ru
+  550  systemctl restart dovecot && systemctl restart postfix
+  551  doveadm mailbox list -u zakaz@sumare.ru
+  552  doveadm mailbox subscribe -u zakaz@sumare.ru sumarepublic
+  553  doveadm mailbox create -u zakaz@sumare.ru sumarepublic/2
+  554  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  555  systemctl restart dovecot && systemctl restart postfix
+  556  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  557  doveadm mailbox create -u zakaz@sumare.ru -s sumarepublic
+  558  doveadm mailbox create -u zakaz@sumare.ru -s sumarepublic1
+  559  doveadm acl debug -u zakaz@sumare.ru sumarepublic
+  560  doveadm acl debug -u zakaz@sumare.ru Trash
+  561  systemctl restart dovecot && systemctl restart postfix
+  562  doveadm acl debug -u zakaz@sumare.ru sumarepublic
+  563  systemctl restart dovecot && systemctl restart postfix
+  564  doveadm acl debug -u zakaz@sumare.ru sumarepublic
+  565  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  566  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  567  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  568  doveadm acl debug -u zakaz@sumare.ru sumarepublic
+  569  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  570  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  571  vi /sumarepochta/sumarepublic/dovecot-acl
+  572  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  573  systemctl status dovecot –l
+  574  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  575  systemctl status dovecot –l
+  576  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  577  systemctl status dovecot –l
+  578  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  579  systemctl status dovecot –l
+  580  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  581  systemctl status dovecot –l
+  582  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  583  systemctl status dovecot –l
+  584  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  585  systemctl status dovecot –l
+  586  doveadm acl get -u zakaz@sumare.ru sumarepublic
+  587  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  588  vim /sumarepochta/sumarepublic/mailboxes/dovecot-acl
+  589  ll /sumarepochta/sumarepublic/mailboxes/
+  590  ll /sumarepochta/sumarepublic/mailboxes
+  591  ll /sumarepochta/sumarepublic/
+  592  mkdir /sumarepochta/sumarepublic/mailboxes
+  593  vim /sumarepochta/sumarepublic/mailboxes/dovecot-acl
+  594  chown -R sumarepochta:sumarepochta /sumarepochta/sumarepublic/
+  595  chmod -R 777 /sumarepochta/sumarepublic/
+  596  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  597  systemctl status dovecot –l
+  598  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  599  systemctl status dovecot –l
+  600  vim /etc/dovecot/global-acls1
+  601  1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  602  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  603  systemctl status dovecot –l
+  604  vim /etc/dovecot/global-acls1
+  605  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  606  systemctl status dovecot –l
+  607  vim /etc/dovecot/global-acls1
+  608  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  609  systemctl status dovecot –l
+  610  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  611  systemctl status dovecot –l
+  612  rm -f /var/log/maillog  &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  613  systemctl status dovecot –l
+  614  poweroff
+  615  mc
+  616  openssl s_client -crlf -connect imap.mail.yahoo.com:993
+  617  doveadm dsync-server 
+  618  pstree
+  619  cat /etc/passwd
+  620  history | grep sumarep
+  621  ping mailer2.sumare.ru
+  622  ping mailer1.sumare.ru
+  623   vim /etc/named/sumare.ru.zone
+  624  vim /etc/sysconfig/network-scripts/ifcfg-enp0s3
+  625  systemctl restart named
+  626  systemctl status named –l
+  627  ping mailer1.sumare.ru
+  628  ping mailer2.sumare.ru
+  629  vim /etc/dovecot/dovecot.conf 
+  630  systemctl restart dovecot 
+  631  systemctl status  dovecot -l
+  632  doveadm replicator status zaka*
+  633  tail /var/log/maillog
+  634  systemctl restart dovecot & systemctl status  dovecot -l
+  635  vim /etc/dovecot/dovecot.conf 
+  636  systemctl restart dovecot & systemctl status  dovecot -l
+  637  cat /etc/passwd
+  638  vim /etc/dovecot/dovecot.conf 
+  639  systemctl restart dovecot & systemctl status  dovecot -l
+  640  vim /etc/dovecot/dovecot.conf 
+  641  systemctl restart dovecot & systemctl status  dovecot -l
+  642  cat /etc/passwd
+  643  tail /var/log/maillog
+  644  vim /etc/dovecot/dovecot.conf 
+  645  systemctl restart dovecot & systemctl status  dovecot -l
+  646  systemctl restart dovecot && systemctl status  dovecot -l
+  647  doveadm replicator status zaka*
+  648  tail /var/log/maillog
+  649  vim /etc/dovecot/dovecot.conf 
+  650  systemctl restart dovecot && systemctl status  dovecot -l
+  651  vim /etc/dovecot/dovecot.conf 
+  652  tail /var/log/maillog
+  653  top
+  654  tail /var/log/maillog
+  655  vim /etc/dovecot/dovecot.conf 
+  656  mc
+  657  systemctl restart dovecot && systemctl status  dovecot -l
+  658  tail /var/log/maillog
+  659  doveadm replicator status zaka*
+  660  vim /etc/dovecot/dovecot.conf 
+  661  systemctl restart dovecot && systemctl status  dovecot -l
+  662  doveadm replicator status zaka*
+  663  pstree
+  664  tail /var/log/maillog
+  665  rm -f /var/log/maillog &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  666  tail /var/log/maillog
+  667  doveadm replicator status zaka*
+  668  reboot
+  669  mc
+  670  cat /var/log/maillog
+  671  doveadm replicator status zaka*
+  672  doveadm replicator status 
+  673  pstree
+  674  vim /etc/dovecot/dovecot.conf 
+  675  rm -f /var/log/maillog &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  676  pstree
+  677  doveadm replicator status 
+  678  cat /var/log/maillog
+  679  vim /etc/dovecot/conf.d/20-lmtp.conf
+  680  cat /var/log/maillog
+  681  pstree
+  682  vim /etc/dovecot/dovecot.conf 
+  683  rm -f /var/log/maillog &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  684  pstree
+  685  vim /etc/dovecot/conf.d/20-lmtp.conf
+  686  systemctl restart dovecot && systemctl status  dovecot -l
+  687  cat /var/log/maillog
+  688  vim /etc/dovecot/dovecot.conf 
+  689  systemctl restart dovecot && systemctl status  dovecot -l
+  690  cat /var/log/maillog
+  691  doveadm replicator status
+  692  doveadm replicator status zak*
+  693  replicator dsync-status
+  694  doveadm replicator dsync-status
+  695  cat /var/log/maillog
+  696  vim /etc/dovecot/dovecot.conf 
+  697  systemctl restart dovecot && systemctl status  dovecot -l
+  698  pstree
+  699  cat /var/log/maillog
+  700  vim /etc/dovecot/dovecot.conf 
+  701  systemctl restart dovecot && systemctl status  dovecot -l
+  702  cat /var/log/maillog
+  703  vim /etc/dovecot/dovecot.conf 
+  704  systemctl restart dovecot && systemctl status  dovecot -l
+  705  cat /var/log/maillog
+  706  vim /etc/dovecot/dovecot.conf 
+  707  systemctl restart dovecot && systemctl status  dovecot -l
+  708  cat /var/log/maillog
+  709  tail -F -n 35 /var/log/maillog
+  710  systemctl restart dovecot && systemctl status  dovecot -l
+  711  tail -F -n 35 /var/log/maillog
+  712  pstree
+  713  doveadm replicator status zaka*
+  714  tail /var/log/maillog
+  715  vim /etc/dovecot/dovecot.conf 
+  716  cat /var/log/maillog
+  717  rm -f /var/log/maillog &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  718  cat /var/log/maillog
+  719  doveadm replicator status zaka*
+  720  doveadm replicator status
+  721  man doveadm replicator
+  722  doveadm replicator status zak*
+  723  doveadm replicator status *
+  724  doveadm replicator status -A
+  725  doveadm replicator status zak*
+  726  man dsync
+  727  man doveadm sync
+  728  vim /etc/dovecot/dovecot.conf 
+  729  man doveadm sync
+  730  vim /etc/dovecot/dovecot.conf 
+  731  rm -f /var/log/maillog &&  killall -1 rsyslogd && systemctl restart dovecot && systemctl restart postfix
+  732  vim /etc/dovecot/dovecot.conf 
+  733  man doveadm sync
+  734  reboot
+  735  doveadm user '*'
+  736  man doveadm mount
+  737  poweroff
+  738  pstree
+  739  tail -F -n 35 /var/log/maillog
+  740  yum install epel-release
+  741  poweroff
+  742  ip a
+  743  exit
+  744  cd ~
+  745  mkdir ansible
+  746  cd ansible/
+  747  vim hosts.txt
+  748  ansible -i hosts.txt all -m ping
+  749  ansible -i hosts.txt all -m ping -b
+  750  slogin mailer1 -l root
+  751  slogin mailer2 -l root
+  752  w
+  753  exit
+  754  yum install ansible
+  755  mc
+  756  ansible -i hosts.txt all -m ping
+  757  ll
+  758  cd an
+  759  exit
+  760  cd ansible/
+  761  ansible -i hosts.txt all -m ping
+  762  slogin mailer2 -l root
+  763  vim hosts.txt 
+  764  ansible -i hosts.txt all -m ping
+  765  vim hosts.txt 
+  766  ansible -i hosts.txt all -m ping
+  767  cd ~
+  768  ll
+  769  ssh-keygen
+  770  ip a
+  771  cat .ssh/id_rsa.pub | ssh root@192.168.5.252 'cat >> .ssh/authorized_keys'
+  772  exit
+  773  ip a
+  774  ssh root@192.168.5.252 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+  775  logout
+  776  tail -F -n 35 /var/log/maillog
+  777  doveadm replicator status -A
+  778  doveadm replicator status
+  779  vim /etc/dovecot/dovecot.conf 
+  780  ip a
+  781  ip a
+  782  ssh root@192.168.5.252
+  783  ssh-keygen
+  784  cat .ssh/id_rsa.pub | ssh root@192.168.5.252 'cat >> .ssh/authorized_keys'
+  785  ssh root@192.168.5.252 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
+  786  ssh root@192.168.5.252
+  787  cd ansible/
+  788  ansible -i hosts.txt all -m ping
+  789  vim hosts.txt 
+  790  ansible -i hosts.txt all -m ping
+  791   echo 192.168.5.252 | xargs -i ssh-copy-id {}
+  792  vim hosts.txt 
+  793  ansible -i hosts.txt all -m ping
+  794  ping mailer2
+  795  vim hosts.txt 
+  796  ansible -i hosts.txt all -m ping
+  797  reboot
+  798  ssh 192.168.5.252
+  799  cd ansible/
+  800  ansible -i hosts.txt all -m ping
+  801  vim hosts.txt 
+  802  ansible -i hosts.txt all -m ping
+  803  ansible -i hosts.txt all -m setup
+  804  vim hosts.txt 
+  805  ansible -i hosts.txt all -m setup
+  806  ansible -- version
+  807  ansible --version
+  808  ansible -i hosts.txt all -m ping ANSIBLE_DEBUG=1
+  809  ansible -i hosts.txt all -m ping -v
+  810  apt-get install python
+  811  vim  /etc/ansible/ansible.cfg
+  812  ansible -i hosts.txt all -m ping -v
+  813  vim  /etc/ansible/ansible.cfg
+  814  ansible -i hosts.txt all -m ping -v
+  815  vim hosts.txt 
+  816  ansible -i hosts.txt all -m ping -v
+  817  ansible -i hosts.txt all -m ping  -u root --ask-pass
+  818  vim /etc/ssh/sshd_config
+  819  systemctl restart sshd
+  820  ansible -i hosts.txt all -m ping  -u root --ask-pass
+  821  poweroff
+  822  yum install rsync
+  823  history >history-mailer1.txt

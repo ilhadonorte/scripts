@@ -1,0 +1,1000 @@
+    4  postconf -m
+    5  yum info posrfix3
+    6  yum info postfix3
+    7  yum install postfix3-mysql
+    8  postconf -m
+    9  systemctl restart postfix
+   10  systemctl status postfix –l 
+   11  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf
+   12  mysql -uroot
+   13  cat /etc/postfix/sumare-local-recipient-maps.cf
+   14  vi /etc/postfix/sumare-local-recipient-maps.cf
+   15  systemctl restart postfix
+   16  systemctl status postfix –l 
+   17  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipi
+   18  vi /etc/postfix/main.cf
+   19  cp /etc/postfix/sumare-local-recipient-maps.cf /etc/postfix/sumarelocrec.cf
+   20  systemctl restart postfix
+   21  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipi
+   22  postmap -q "asat" mysql:/etc/postfix/sumarelocrec.cf
+   23  ll /etc/postfix/
+   24  systemctl restart postfix
+   25  postmap -q "asat" mysql:/etc/postfix/sumarelocrec.cf
+   26  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   27  systemctl restart postfix
+   28  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   29  systemctl restart postfix
+   30  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   31  systemctl restart postfix
+   32  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   33  chmod 777 /etc/postfix/sumare-local-recipient-maps.cf
+   34  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   35  chmod +777 /etc/postfix/sumare-local-recipient-maps.cf
+   36  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   37  mysql -uroot -p -S /var/lib/mysql/mysql.sock
+   38  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   39  systemctl restart postfix
+   40  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   41  mysql -uroot -p -S /var/run/mysqld/mysqld.sock
+   42  ll -a
+   43  cat .my.cnf 
+   44  mysql -uroot -p -S /var/run/mysqld/mysqld.sock
+   45  mysql -uroot -p 
+   46  systemctl restart postfix
+   47  postmap -q "asat" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   48  postmap -q "asat2" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   49  postmap -q "margo" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   50  postmap -q "00" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   51  postmap -q "123" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   52  cat ./adicionar_logins.sh 
+   53  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'
+   54  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}' >temp.txt
+   55  cat ./adicionar_logins.sh 
+   56  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' > temp.txt
+   57  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' | sort | uniq > temp2.txt
+   58  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' | sort | uniq > logins01
+   59  mysqldump --opt sumare > /root/backups-mysql/$(date +%Y-%m-%d)-backup-sumare.sql
+   60  postmap -q "laura" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   61  postmap -q "linda" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   62  postmap -q "lind" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   63  postmap -q "lindy" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   64  postmap -q "ryan" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   65  mc
+   66  tail -F /var/log/maillog
+   67  postmap -q "pete" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   68  postmap -q "peter" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   69  mc
+   70  cat /var/log/maillog
+   71  postmap -q "adha" mysql:/etc/postfix/sumare-local-recipient-maps.cf 
+   72  man deluser
+   73  man userdel
+   74  history | useradd
+   75  history | grep useradd
+   76  userdel -r kim
+   77  userdel -r andrea
+   78  userdel -r gary
+   79  userdel -r simon
+   80  userdel -r info
+   81  userdel -r great
+   82  userdel -r support
+   83  userdel -r admin
+   84  cat /etc/passwd
+   85  userdel -r silkroad
+   86  userdel -r vc
+   87  userdel -r amy
+   88  userdel -r contato
+   89  userdel -r sarah
+   90  userdel -r anna
+   91  userdel -r director
+   92  userdel -r service
+   93  userdel -r ben
+   94  userdel -r me
+   95  userdel -r eric
+   96  userdel -r kontakt
+   97  userdel -r tony
+   98  userdel -r lisa
+   99  userdel -r nick
+  100  userdel -r mim
+  101  userdel -r rob
+  102  userdel -r robert
+  103  cat /etc/passwd
+  104  mysql -uroot -p 
+  105  mysql -uroot 
+  106  userdel -r great
+  107  userdel -r asat
+  108  cat /etc/passwd
+  109  userdel -r martin
+  110  userdel -r joe
+  111  userdel -r tim
+  112  userdel -r bill
+  113  userdel -r dan
+  114  userdel -r jeff
+  115  userdel -r bob
+  116  userdel -r matt
+  117  userdel -r tom
+  118  cat /etc/passwd
+  119  doveadm -f table mailbox status -A all INBOX
+  120  doveadm -f table mailbox status -u asat -t all '*'
+  121  doveadm -f table mailbox status -A "messages vsize" INBOX
+  122  mysql -uroot -p 
+  123  mysql -uroot
+  124  cat /etc/passwd
+  125  mysql -uroot
+  126  cat /etc/passwd
+  127  cat /etc/passwd | grep asa
+  128  man doveam copy
+  129  man doveadm copy
+  130  mc
+  131  iftop
+  132  w -i
+  133  iftop
+  134  last
+  135  iftop
+  136  df -h
+  137  df -h
+  138  df -h
+  139  df -h
+  140  df -h
+  141  df -h
+  142  tail -F /var/log/maillog
+  143  doveadm -Dv copy -u great INBOX user info '*' 
+  144  doveadm -Dv copy -u great INBOX user info BEFORE 2020-02-07
+  145  doveadm -Dv copy -u great info user info BEFORE 2020-02-07
+  146  doveadm -Dv copy -u great inbox2 user inbox BEFORE 2020-02-07
+  147  doveadm -Dv copy -u great mail2 user mail BEFORE 2020-02-08
+  148  doveadm -Dv copy -u great INBOX\mail2 user mail BEFORE 2020-02-08
+  149  doveadm -Dv copy -u great INBOX/mail2 user mail BEFORE 2020-02-08
+  150  doveadm -Dv copy -u great INBOX/mail2 user office BEFORE 2020-02-08
+  151  doveadm -Dv copy -u great INBOX/mail2 user info ALL
+  152  imapsync --host1 imap.mail.ru --user1 oplblitz --password1 pioneer --host2 mail.sumare.ru --user2 great --password2 sumare1password -ssl1 -ssl2
+  153  imapsync --host1 imap.mail.ru --user1 oplblitz@mail.ru --password1 pioneer --host2 mail.sumare.ru --user2 great --password2 sumare1password -ssl1 -ssl2
+  154  imapsync --host1 imap.mail.ru --user1 oplblitz@mail.ru --password1 pioneer --host2 mail.sumare.ru --user2 great@sumare.ru --password2 sumare1password -ssl1 -ssl2
+  155  ping  mail.sumare.ru
+  156  imapsync --host1 imap.mail.ru --user1 oplblitz@mail.ru --password1 pioneer --host2 mail.sumare.ru --user2 great@sumare.ru --password2 sumare1password -ssl1
+  157  df -H
+  158  history | grep awk
+  159  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' | sort | uniq > logins01
+  160  history | grep mysql
+  161  mysql -uroot
+  162  mysql -uroot -p --local-infile=1
+  163  mysql -uroot --local-infile=1
+  164  mc
+  165  mysql -uroot --local-infile=1
+  166  ll -h /var/log
+  167  cat /var/log/maillog
+  168  history | grep awk
+  169  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' > temp.txt
+  170  cat temp.txt 
+  171  vi adicionar_logins.sh 
+  172  ./adicionar_logins.sh 
+  173  cat /var/log/maillog
+  174  cat temp.txt | sort | uniq > logins01
+  175  tail -F /var/log/maillog
+  176  cat /var/log/maillog
+  177  ll -h /var/log
+  178  mc
+  179  mysql -uroot --local-infile=1
+  180  ll -h /var/log
+  181  cat /var/log/maillog
+  182  mc
+  183  tail -F /var/log/maillog
+  184  history | grep temp
+  185  df -H
+  186  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' > temp.txt
+  187  cat temp.txt | sort | uniq > logins01
+  188  mysql -uroot --local-infile=1
+  189  tail -F /var/log/maillog
+  190  mysql -uroot --local-infile=1
+  191  cat /var/log/maillog
+  192  pflogsumm -d today /var/log/maillog 
+  193  w -i
+  194  vi /etc/hosts
+  195  ll -h
+  196  cat logins_com_frequencia1.txt 
+  197  cat adicionar_logins.sh 
+  198  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' >> /root/temp
+  199  cat temp
+  200  cat temp.txt | sort | uniq > logins01
+  201  cat temp | sort | uniq > logins01
+  202  cat logins01
+  203  mc
+  204  cat /var/log/maillog
+  205  tail -F /var/log/maillog
+  206  mc
+  207  vi 15-mailboxes.conf 
+  208  dovecot reload
+  209  vi 15-mailboxes.conf 
+  210  dovecot reload
+  211  dovecot reload
+  212  vi 15-mailboxes.conf 
+  213  dovecot reload
+  214  chmod +x -R /sumarepochta/sumarepublic/
+  215  chown mail:mail /sumarepochta/sumarepublic/
+  216  chmod +x -R /sumarepochta/sumarepublic/
+  217  dovecot reload
+  218  dovecot reload
+  219  dovecot reload
+  220  vi /etc/dovecot/dovecot.conf 
+  221  dovecot reload
+  222  vi /etc/dovecot/dovecot.conf 
+  223  dovecot reload
+  224  mkdir -p /sumarepochta/sumarepublic/.TestFolder
+  225  chown -R mail:mail /sumarepochta/sumarepublic/.TestFolder
+  226  chmod -R 0700 /sumarepochta/sumarepublic/.TestFolder
+  227  doveadm acl get -A "sumareublic/TestFolder"
+  228  dovecot reload
+  229  doveadm acl get -A "sumareublic/TestFolder"
+  230  doveadm acl get -A "sumarepublic/TestFolder"
+  231  doveadm acl set -A "sumarepublic/TestFolder" "user=asat@sumare.ru" lookup read write write-seen write-deleted insert delete expunge create
+  232  doveadm -D acl get -A "sumarepublic/TestFolder"
+  233  mc
+  234  [19~[19~
+  235  OA
+  236  mc
+  237  doveadm acl debug -u great@sumare.ru sumarepublic
+  238  doveadm acl debug -u great@sumare.ru sumarepublic/inbox
+  239  doveadm acl debug -u great@sumare.ru INBOX
+  240  doveadm acl debug -u asat@sumare.ru INBOX
+  241  doveadm acl debug -u asat@sumare.ru INBOX.toshare
+  242  doveadm acl debug -u asat@sumare.ru INBOX/toshare
+  243  doveadm acl debug -u asat@sumare.ru sumarepublic
+  244  doveadm acl debug -u asat@sumare.ru sumarepublic/234
+  245  doveadm acl debug -u asat@sumare.ru sumarepublic/.123
+  246  dovecot reload
+  247  logger -p mail.info "proverka" 
+  248  doveadm acl debug -u info@sumare.ru INBOX/toshare
+  249  dovecot reload
+  250  logger -p mail.info "proverka" 
+  251  dovecot reload
+  252  logger -p mail.info "proverka" 
+  253  mysql -uroot --local-infile=1
+  254  cat /var/log/maillog
+  255  dovecot reload
+  256  vi /etc/dovecot/conf.d/10-mail.conf 
+  257  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  258  vi /etc/dovecot/conf.d/10-mail.conf 
+  259  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  260  dovecot reload
+  261  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  262  dovecot reload
+  263  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  264  dovecot reload
+  265  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  266  dovecot reload
+  267  vi /etc/dovecot/conf.d/15-mailboxes.conf 
+  268  dovecot reload
+  269  dovecot-acl-list
+  270  dovecot acl list
+  271  dovecot acl 
+  272  get
+  273  dovecot acl get
+  274  dovecot acl get -u asat -m sumarepublic
+  275  dovecot acl get -u asat -m inbox
+  276  dovecot acl get -u asat -m great\inbox
+  277  man dovecot-acl
+  278  man doveconf-acl
+  279  man doveadm-acl
+  280  history 
+  281  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' >> /root/temp
+  282  cat temp | sort | uniq > logins01
+  283  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' >> /root/temp
+  284  cat temp | sort | uniq > logins01
+  285  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' 
+  286  ps axuww
+  287  pstree
+  288  yum list installed
+  289  tail -F /var/log/maillog
+  290  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  291  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' 
+  292  cat /var/log/maillog 
+  293  pflogsumm -d today /var/log/maillog 
+  294  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' 
+  295  cat /var/log/maillog 
+  296  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  297  traceroute 45.125.66.175
+  298  tracerout 45
+  299  yum install traceroute
+  300  traceroute 45.125.66.175
+  301  traceroute 45.125.66.233
+  302  cat logins_com_frequencia1.txt 
+  303  exit
+  304  cat cenhas_furados.txt | sort | uniq > cenhas;
+  305  mc
+  306  mysql -uroot --local-infile=1
+  307  mysql -uroot --local-infile=1 -database=sumare;
+  308  mysql -uroot --local-infile=1 --database=sumare;
+  309  mc
+  310  mysqldump --opt sumare > /root/backups-mysql/$(date +%Y-%m-%d)-backup-sumare.sql
+  311  mysqldump --opt sumare > "/root/backups-mysql/$(date +%Y-%m-%d)-backup-sumare.sql"
+  312  mysqldump --opt sumare > /root/backups-mysql/2020-02-15-backup-sumare.sql
+  313  mysqldump --opt sumare >> /root/backups-mysql/2020-02-15-backup-sumare.sql
+  314  mysqldump --opt sumare >> /root/backups/backups-mysql/$(date +%Y-%m-%d)-backup-sumare.sql
+  315  mc
+  316  cat brutforsers.txt | gawk '{print $1}'
+  317  cat adicionar_logins.sh 
+  318  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 
+  319  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -kn2 
+  320  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -kl2 
+  321  iptables -I INPUT -s 45.125.66.37 -j DROP
+  322  iptables -I INPUT -s 45.125.66.28 -j DROP
+  323  iptables -I INPUT -s 45.125.66.180 -j DROP
+  324  iptables -I INPUT -s 45.125.66.176 -j DROP
+  325  iptables -I INPUT -s 45.125.66.173 -j DROP
+  326  iptables -I INPUT -s 45.125.66.175 -j DROP
+  327  iptables -I INPUT -s 45.125.66.130 -j DROP
+  328  iptables -I INPUT -s 45.125.66.69 -j DROP
+  329  iptables -I INPUT -s 45.125.66.184 -j DROP
+  330  iptables -I INPUT -s 45.125.66.194 -j DROP
+  331  iptables -I INPUT -s 45.125.66.141 -j DROP
+  332  iptables -I INPUT -s 45.125.66.123 -j DROP
+  333  iptables -I INPUT -s 45.125.66.192 -j DROP
+  334  iptables -I INPUT -s 45.125.66.54 -j DROP
+  335  iptables -I INPUT -s 45.125.66.212 -j DROP
+  336  iptables -I INPUT -s 45.125.66.183 -j DROP
+  337  iptables -I INPUT -s 45.125.66.137 -j DROP
+  338  iptables -I INPUT -s 45.125.66.135 -j DROP
+  339  iptables -I INPUT -s 45.125.66.253 -j DROP
+  340  iptables -I INPUT -s 45.125.66.251 -j DROP
+  341  iptables -I INPUT -s 45.125.66.165 -j DROP
+  342  iptables -I INPUT -s 45.125.66.133 -j DROP
+  343  iptables -I INPUT -s 45.125.66.36 -j DROP
+  344  crontab -e
+  345  iptables-save > /root/backups/backup-iptables/$(date +%Y-%m-%d)-sumare-iptables.txt
+  346  mysql -uroot --database="sumare" --local-infile=1 
+  347  history | grep 01
+  348  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' | sort | uniq > logins01
+  349  vi insert_logins_to_sumare_users.sql
+  350  mysql -uroot --database="sumare" --local-infile=1 < "/root/insert_logins_to_sumare_users.sql"> results_file
+  351  results_file
+  352  cat results_file 
+  353  mysql -uroot --database="sumare" --local-infile=1
+  354  w -i
+  355  last | head
+  356  last 
+  357  cat /var/log/maillog 
+  358  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  359  ca
+  360  mc
+  361  mc
+  362  cat /var/log/maillog | grep 45.89.175.210
+  363  doveadm -Dv copy -u great INBOX/mail3 user sumare BEFORE 2020-02-16
+  364  mc
+  365  A 
+  366  doveadm acl debug -u asat@sumare.ru INBOX/toshare
+  367  df -H
+  368  find -name "[A-Z]*.*"
+  369  find / -mindepth 3  -newermt '2020-02-15 11:35'
+  370  find / -mindepth 3  -size 50M
+  371  find / -mindepth 3  -size +50M
+  372  ll /var/lib/mysql
+  373  ll /var/lib/mysql -H
+  374  ll -h /var/lib/mysql
+  375  find / -mindepth 3  -size +30M
+  376  find / -mindepth 4  -size +30M
+  377  find /var -mindepth 4  -size +30M
+  378  find /var -mindepth 4  -size +20M
+  379  find /var  -size +20M
+  380  find /var  -size +50M
+  381  find / -size +50M
+  382  ll /var/log
+  383  ll -a /var/log
+  384  ls -ah /var/log
+  385  ls -aH /var/log
+  386  ls -sH /var/log
+  387  ls -s /var/log
+  388  man ls
+  389  ls -sa /var/log
+  390  ls -Hsa /var/log
+  391  ls -hsa /var/log
+  392  find . -type f -exec ls -s {} \; | sort -n | head -5
+  393  cd /
+  394  find . -type f -exec ls -s {} \; | sort -n | head -5
+  395  tail -F /var/log/maillog
+  396  man doveadm-acl
+  397  man doveadm
+  398  man doveadm mailbox 
+  399  man doveadm mailbox subscribe
+  400  mc
+  401  OA
+  402  OA
+  403  doveadm reload
+  404  doveadm acl get  -u asat@sumare.ru INBOX/toshare asat@sumare.ru
+  405  doveadm acl get -u asat@sumare.ru INBOX/toshare asat@sumare.ru
+  406  doveadm acl get -u asat INBOX/toshare asat@sumare.ru
+  407  doveadm acl get -u asat INBOX/toshare asat
+  408  doveadm acl get -u asat INBOX
+  409  doveadm acl get -u asat INBOX/toshare
+  410  doveadm acl get -u asat INBOX/toshare/asat
+  411  doveadm acl get -u asat INBOX/toshare/asat@sumare.ru
+  412  doveadm acl debug -u asat@sumare.ru INBOX/toshare
+  413  doveadm acl debug -u info@sumare.ru INBOX/toshare
+  414  doveadm acl debug -u info@sumare.ru asat/INBOX/toshare
+  415  doveadm acl debug -u info@sumare.ru INBOX/toshare/asat
+  416  doveadm acl debug -u info@sumare.ru INBOX/toshare/asat@sumare.ru
+  417  doveadm acl get -u asat INBOX/toshare
+  418  doveadm acl add -u zakaz INBOX\toshare\asat@sumare.ru
+  419  doveadm acl add -u zakaz INBOX\toshare\asat@sumare.ru eilrwts
+  420  doveadm acl add -u zakaz INBOX/toshare/asat@sumare.ru eilrwts
+  421  doveadm acl add -u zakaz@sumare.ru INBOX/toshare/asat@sumare.ru eilrwts
+  422  doveadm acl rights -u asat INBOX
+  423  doveadm acl rights -u asat INBOX/toshare
+  424  doveadm acl rights -u asat INBOX/info
+  425  doveadm acl rights -u asat INBOX/info@sumare.ru
+  426  doveadm acl rights -u asat info/INBOX
+  427  doveadm acl rights -u asat info@sumare.ru/INBOX
+  428  doveadm mailbox list --user asat
+  429  doveadm -Dv mailbox subscribe -u info asat/INBOX/toshare
+  430  doveadm -Dv mailbox subscribe -u asat asat/INBOX/toshare
+  431  vi /etc/dovecot/dovecot.conf 
+  432  doveadm reload
+  433  doveadm -Dv mailbox subscribe -u asat asat/INBOX/toshare
+  434  doveadm -Dv mailbox subscribe -u info asat/INBOX/toshare
+  435  doveadm reload
+  436  doveadm -Dv mailbox subscribe -u info asat/INBOX/toshare
+  437  doveadm acl debug -u info@sumare.ru asat/INBOX 
+  438  doveadm acl debug -u info@sumare.ru /sumarepochta/asat/INBOX 
+  439  doveadm acl debug -u info@sumare.ru sumarepochta/asat/INBOX 
+  440  doveadm acl debug -u info  
+  441  doveadm reload
+  442  doveadm acl debug -u info  toshare/asat@sumare.ru
+  443  doveadm acl set -u info@sumare.ru user=asat@sumare.ru INBOX/toshare lrwsti
+  444  logger -p mail.info "proverka" 
+  445  doveadm acl set -u info@sumare.ru user=asat@sumare.ru INBOX/toshare lrwsti
+  446  doveadm acl set -u info@sumare.ru user=asat@sumare.ru INBOX\toshare lrwsti
+  447  doveadm acl set -u asat@sumare.ru user=info@sumare.ru INBOX/toshare lrwsti
+  448  doveadm acl set -u info@sumare.ru user=asat@sumare.ru INBOX lrwsti
+  449  doveadm acl set -u info@sumare.ru user=asat@sumare.ru 'INBOX' lrwsti
+  450  doveadm acl set -u info@sumare.ru user=asat@sumare.ru "INBOX" lrwsti
+  451  doveadm acl set -u info user=asat INBOX lrwsti
+  452  doveadm acl set -u info user=asat\INBOX lrwsti
+  453  man doveadm-acl-set
+  454  doveadm acl get -A  INBOX/toshare
+  455  doveadm acl get -u asat  INBOX/toshare
+  456  doveadm acl get -u info  INBOX/toshare
+  457  doveadm acl get -u asat INBOX/toshare "user=info@sumare.ru"
+  458  doveadm acl get -u asat INBOX/toshare user=info@sumare.ru
+  459  doveadm acl get -u asat -m INBOX/toshare 
+  460  doveadm acl get -u asat INBOX/toshare 
+  461  doveadm acl get -u asat "INBOX/toshare" 
+  462  doveadm acl set -u great INBOX/toshare user=asat lrwsti
+  463  doveadm acl set -u asat INBOX/toshare user=great lrwsti
+  464  doveadm acl set -u asat INBOX/toshare user=great lr
+  465  doveadm acl set -u asat INBOX/toshare user=great l
+  466  doveadm acl set -u asat INBOX/toshare user=great "l"
+  467  doveadm acl set -u asat INBOX/toshare user=great 'w'
+  468  doveadm acl set -u asat INBOX/toshare user=great write
+  469  doveadm reload
+  470  doveadm acl set -u asat INBOX/toshare user=great write
+  471  doveadm acl get -u asat "INBOX/toshare" 
+  472  doveadm acl set -u asat INBOX/toshare user=great expunge insert lookup read write write-deleted write-seen
+  473  doveadm acl set -u asat INBOX/toshare user=great expunge
+  474  dovecot reload
+  475  doveadm acl set -u asat INBOX/toshare user=great expunge
+  476  doveadm acl set -u asat INBOX/toshare user=great write
+  477  dovecot reload
+  478  doveadm acl set -u asat INBOX/toshare user=great write
+  479  doveadm acl set -u asat INBOX/toshare user=great expunge
+  480  touch /etc/dovecot/sumare-shared-mailboxes.db
+  481  doveadm acl set -u asat INBOX/toshare user=great expunge
+  482  doveadm acl set -u asat INBOX/toshare user=great write
+  483  logger -p mail.info "proverka" 
+  484  dovecot reload
+  485  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  486  dovecot reload
+  487  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  488  dovecot reload
+  489  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  490  dovecot reload
+  491  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  492  dovecot reload
+  493  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  494  dovecot reload
+  495  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  496  logger -p mail.info "proverka" 
+  497  doveadm acl set -u asat INBOX/toshare user=great write expunge
+  498  doveadm acl set -u asat INBOX/toshare user=great expunge insert lookup read write write-deleted write-seen
+  499  chmod +777 /etc/dovecot/sumare-shared-mailboxes.db
+  500  doveadm acl set -u asat INBOX/toshare user=great expunge insert lookup read write write-deleted write-seen
+  501  logger -p mail.info "proverka" 
+  502  doveadm acl get -u asat INBOX/toshare
+  503  dovecot reload
+  504  doveadm acl get -u asat INBOX/toshare
+  505  doveadm acl set -u asat INBOX/toshare user=zakaz expunge insert lookup read write write-deleted write-seen
+  506  chmown dovecot:dovecot /etc/dovecot/sumare-shared-mailboxes.db
+  507  chown dovecot:dovecot /etc/dovecot/sumare-shared-mailboxes.db
+  508  doveadm acl set -u asat INBOX/toshare user=zakaz expunge insert lookup read write write-deleted write-seen
+  509  doveadm acl set -u asat INBOX/toshare user=great expunge insert lookup read write write-deleted write-seen
+  510  doveadm acl get -u asat INBOX/toshare
+  511  dovecot reload
+  512  doveadm acl set sumarepublic user=asat expunge insert lookup read write write-deleted write-seen
+  513  doveadm acl set \sumarepublic user=asat expunge insert lookup read write write-deleted write-seen
+  514  pflogsumm -d today /var/log/maillog 
+  515  doveadm mailbox list --user asat
+  516  doveadm -Dv mailbox subscribe -u asat INBOX/toshare user=info
+  517  doveadm mailbox subscribe -u asat INBOX/toshare user=info
+  518  doveadm mailbox subscribe sumarepublic user=info
+  519  doveadm acl set -A "sumarepublic" "anyone" lookup read
+  520  doveadm acl set -u info "sumarepublic" "anyone" lookup read
+  521  doveadm acl get -u info "sumarepublic" 
+  522  doveadm acl get -u info sumarepublic 
+  523  doveadm mailbox create sumarepublic -s
+  524  ll /sumarepochta/
+  525  doveadm acl get -u info sumarepublic 
+  526  doveadm acl get -u info "sumarepublic" 
+  527  dovecot reload
+  528  mc
+  529  tail -F /var/log/maillog
+  530  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  531  tail -F /var/log/maillog
+  532  ls -la
+  533  cat /var/log/maillog
+  534  mc
+  535  df -h
+  536  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  537  df -h
+  538  mc
+  539  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  540  df -h
+  541  mc
+  542  OA
+  543  mc
+  544  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -kl2 
+  545  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 
+  546  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort
+  547  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 | uniq
+  548  iptables -I INPUT -s 45.125.66.143 -j DROP
+  549  iptables -I INPUT -s 45.125.66.190 -j DROP
+  550  iptables -I INPUT -s 45.125.66.193 -j DROP
+  551  iptables -I INPUT -s 45.125.66.109 -j DROP
+  552  iptables -I INPUT -s 45.125.66.138 -j DROP
+  553  iptables -I INPUT -s 45.125.66.155 -j DROP
+  554  iptables -I INPUT -s 45.125.66.178 -j DROP
+  555  iptables -I INPUT -s 45.125.66.162 -j DROP
+  556  iptables -I INPUT -s 45.125.66.183 -j DROP
+  557  iptables -I INPUT -s 45.125.66.160 -j DROP
+  558  iptables -I INPUT -s 45.125.66.106 -j DROP
+  559  iptables -I INPUT -s 45.125.66.189 -j DROP
+  560  iptables -I INPUT -s 45.125.66.82 -j DROP
+  561  iptables -I INPUT -s 45.125.66.139 -j DROP
+  562  iptables -I INPUT -s 45.125.66.18 -j DROP
+  563  iptables -I INPUT -s 45.125.66.231 -j DROP
+  564  iptables -I INPUT -s 45.125.66.232 -j DROP
+  565  iptables -I INPUT -s 45.125.66.68 -j DROP
+  566  iptables -I INPUT -s 45.125.66.89 -j DROP
+  567  iptables -I INPUT -s 78.128.113.66 -j DROP
+  568  iptables-save > /root/backups/backup-iptables/$(date +%Y-%m-%d)-sumare-iptables.txt
+  569  cat /root/logins_com_frequencia1.txt | awk -F'@' '{print $1}'| sed 's/to=<//g' | sort | uniq > logins01
+  570  history | grep results_file 
+  571   mysql -uroot --database="sumare" --local-infile=1 < "/root/insert_logins_to_sumare_users.sql">> results_file
+  572   mysql -uroot --database="sumare" --local-infile=1
+  573   mysql -uroot --database="sumare" --local-infile=1 < "/root/insert_logins_to_sumare_users.sql">> results_file
+  574  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 | uniq
+  575  cat /var/log/maillog | grep connect
+  576  cat /var/log/maillog | grep 'connect from'
+  577  cat /var/log/maillog | grep ': connect from'
+  578  cat /var/log/maillog | grep ': connect from' | sort
+  579  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  580  uptime
+  581  w -i
+  582  last | head
+  583  mysqlbinlog mysqld-bin.000001
+  584  mysqlbinlog /var/lib/mysql/mysqld-bin.000001
+  585  mysqlbinlog /var/lib/mysql/mysqld-bin.000018
+  586  mysqlbinlog /var/lib/mysql/binlog.000018 
+  587  mysqlbinlog --base64-output = never /var/lib/mysql/binlog.000018 
+  588  mysqlbinlog --base64-output=never /var/lib/mysql/binlog.000018 
+  589  systemctl status mariadb
+  590  systemctl status mysql
+  591  systemctl status mysqld
+  592  tail -n 50 /var/log/maillog
+  593  tail -n 100 /var/log/maillog
+  594  tail -n 200 /var/log/maillog
+  595  tail -n 300 /var/log/maillog
+  596  tail -n 400 /var/log/maillog
+  597  iptables -I INPUT -s 185.143.223.160 -j DROP
+  598  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  599  passwd
+  600  exit
+  601  pflogsumm -d today /var/log/maillog 
+  602  pflogsumm -d yestuday /var/log/maillog 
+  603  pflogsumm -d yesterday /var/log/maillog 
+  604  mc
+  605  tail -F  /var/log/maillog 
+  606  mc
+  607  mc
+  608  cat  /var/log/maillog 
+  609  cat brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 
+  610  cat /root/brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 
+  611  pflogsumm -d yesterday /var/log/maillog 
+  612  pflogsumm -d today /var/log/maillog 
+  613  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  614  pflogsumm -d today /var/log/maillog 
+  615  pflogsumm -d today /var/log/maillog >1.txt
+  616  cat 1.txt
+  617  cat /var/log/maillog | grep vie
+  618  pflogsumm -d today /var/log/maillog 
+  619  mc
+  620  pflogsumm -d today /var/log/maillog | head
+  621  pflogsumm -d today /var/log/maillog | head -n 20
+  622  pflogsumm -d today /var/log/maillog | head -n 30
+  623  pflogsumm -d today /var/log/maillog | head -n 100
+  624  pflogsumm -d today /var/log/maillog | head -n 200
+  625  pflogsumm -d yesterday /var/log/maillog | head -n 200
+  626  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  627   mysql -uroot --database="sumare" 
+  628  mc
+  629  cat /root/brutforsers.txt | gawk '{print $1}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort -k2 
+  630  iptables -I INPUT -s 92.118.38.58 -j DROP
+  631  iptables -I INPUT -s 185.36.81.78 -j DROP
+  632  iptables -I INPUT -s 185.36.81.23 -j DROP
+  633  iptables -I INPUT -s 141.98.10.137 -j DROP
+  634  iptables -I INPUT -s 185.36.81.57 -j DROP
+  635  iptables -I INPUT -s 45.125.65.35 -j DROP
+  636  iptables -I INPUT -s 45.125.65.42 -j DROP
+  637  iptables -I INPUT -s 185.143.223.163 -j DROP
+  638  iptables -I INPUT -s 185.143.223.173 -j DROP
+  639  iptables -I INPUT -s 185.143.223.161 -j DROP
+  640  iptables -I INPUT -s 185.143.223.97 -j DROP
+  641  iptables -I INPUT -s 185.143.223.168 -j DROP
+  642  iptables-save > /root/backups/backup-iptables/$(date +%Y-%m-%d)-sumare-iptables.txt
+  643  iptables-save
+  644  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  645  pflogsumm -d today /var/log/maillog | head -n 200
+  646  pflogsumm -d yesterday /var/log/maillog | head -n 200
+  647  mc
+  648  pflogsumm -d yesterday /var/log/maillog | head -n 100
+  649  pflogsumm -d yesterday /var/log/maillog | head -n 200
+  650  pflogsumm -d today /var/log/maillog | head -n 200
+  651  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  652  mc
+  653  pstree
+  654  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  655  df -h
+  656  exit
+  657  pflogsumm -d today /var/log/maillog | head -n 200
+  658  pflogsumm -d yesterday /var/log/maillog | head -n 200
+  659  mc
+  660  exit
+  661  pd axZ
+  662  ps axZ
+  663  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  664  pflogsumm -d yesterday /var/log/maillog | head -n 200
+  665  pflogsumm -d today /var/log/maillog | head -n 200
+  666  pflogsumm 
+  667  man pflogsumm 
+  668  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  669  man pflogsumm 
+  670  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  671  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn'
+  672  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | count
+  673  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | sort -nr 
+  674  pinky
+  675  who -qH
+  676  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' 
+  677  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $12}' 
+  678  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $11}' 
+  679  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $1}' 
+  680  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' 
+  681  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $6}' 
+  682  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' 
+  683  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn does not resolve to address' | awk -F: '{print $1}' 
+  684  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn does not resolve to address' 
+  685  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' 
+  686  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | sort -nt
+  687  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | sort -nr
+  688  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | uniq -cd 
+  689  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | uniq -c
+  690  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | sort -r | uniq -c
+  691  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | uniq -c | sort -r
+  692  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}' | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}'
+  693  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $4}'
+  694  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | awk -F: '{print $5}'
+  695  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $7}'  
+  696  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $12}'  
+  697  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $13}'  
+  698  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}'  
+  699  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}'  | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}'
+  700  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}'  | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort
+  701  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}'  | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")", i}' | sort
+  702  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}'  | awk '{freq[$1]++} END{for (i in freq) print "(" freq[i] ")", i}' | sort
+  703  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print "(" freq[i] ")", i}' | sort
+  704  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort
+  705  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -n
+  706  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -nr
+  707  mc
+  708  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}' |sed 's/://g' | awk '{freq[$1]++} END{for (i in freq) print "(" freq[i] ")", i}' | sort
+  709  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}' |sed 's/://g' | awk '{freq[$1]++} END{for (i in freq) print i, freq[i]}' | sort -nr
+  710  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}' |sed 's/://g' | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  711  cat /var/log/maillog | grep 'dynamic-ip-adsl.viettel.vn' | gawk '{print $14}' |sed 's/://g' | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -k2
+  712  logout
+  713  df -h
+  714  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -nr
+  715  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  716  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  717  mc
+  718  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  719  mc
+  720  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  721  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  722  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  723  mc
+  724  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -nr
+  725  ll
+  726  cd ~
+  727  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -nr
+  728  iptables -I INPUT -s 92.118.38.42 -j DROP
+  729  iptables -I INPUT -s 45.133.99.130 -j DROP
+  730  iptables -I INPUT -s 185.234.216.235 -j DROP
+  731  iptables -I INPUT -s 185.163.28.141 -j DROP
+  732  iptables -I INPUT -s 185.234.219.68 -j DROP
+  733  iptables -I INPUT -s 45.125.65.42 -j DROP
+  734  iptables -I INPUT -s 45.125.65.35 -j DROP
+  735  iptables -I INPUT -s 185.36.81.78 -j DROP
+  736  iptables -I INPUT -s 185.36.81.57 -j DROP
+  737  iptables -I INPUT -s 185.36.81.23 -j DROP
+  738  iptables -I INPUT -s 141.98.10.137 -j DROP
+  739  iptables -I INPUT -s 92.118.38.58 -j DROP
+  740  rm brutforsers.txt 
+  741  iptables-save
+  742  w -i
+  743  last | head
+  744  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  745  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  746  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  747  mc
+  748  cat brutforsers.txt| awk '{freq[$1]++} END{for (i in freq) print  freq[i], i}' | sort -nr
+  749  iptables -I INPUT -s 45.133.99.4 -j DROP
+  750  iptables -I INPUT -s 185.234.216.235 -j DROP
+  751  iptables -I INPUT -s 185.163.28.141 -j DROP
+  752  iptables -I INPUT -s 78.128.113.94 -j DROP
+  753  iptables -I INPUT -s 92.118.38.42 -j DROP
+  754  rm brutforsers.txt 
+  755  MC
+  756  mc
+  757  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  758  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  759  cat /var/log/maillog | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/to=<//g' 
+  760  cat /var/log/maillog | grep recip 
+  761  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  762  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  763  mc
+  764  pstree
+  765  pstree
+  766  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  767  pstree
+  768  ps axuww
+  769  pstree
+  770  ps axuww
+  771  pstree
+  772  ps axuww
+  773  ps axuww
+  774  systemctl postfix stop
+  775  systemctl stop postfix
+  776  tail -F  /var/log/maillog 
+  777  pstree -c
+  778  pstree -cp
+  779  pstree -cpV
+  780  pstree -cpN
+  781  w -i
+  782  vi /etc/hosts
+  783  pstree
+  784  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  785  mc
+  786  ls -l /proc/$$/ns
+  787  man pstree
+  788  vi /etc/postfix/main.cf
+  789  ls -l /proc/$$/ns
+  790  free
+  791  cat /var/log/maillog | grep 'connect from'
+  792  cat /var/log/maillog | grep ' connect from' | cut -f 3
+  793  cat /var/log/maillog | grep ' connect from' | cut -f3
+  794  cat /var/log/maillog | grep ' connect from' | cut -f3 d 
+  795  cat /var/log/maillog | grep ' connect from' | cut -f3 d' ' 
+  796  cat /var/log/maillog | grep ' connect from' | cut -f 3 d' ' 
+  797  cat /var/log/maillog | grep ' connect from' | cut -f 3 
+  798  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' 
+  799  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' | sed -r 's/^[^СИМ/[]+//'
+  800  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' | sed -r 's/^[^С�/[]+//'
+  801  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//'
+  802  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | sed "s/[//g;s/\]//g" 
+  803  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | sed 's/[//g'
+  804  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | sed 's//[//g'
+  805  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[
+  806  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \]
+  807  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] | sort
+  808  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] | sort >>zaebali.txt
+  809  cat /var/log/maillog | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] | sort >>connect-disconnect-chasto.txt
+  810  vi adicionar_logins.sh 
+  811  cat /var/log/maillog | grep recip 
+  812  free
+  813  systemctl status mysqld
+  814  systemctl stop mysqld
+  815  free
+  816  systemctl start mysqld
+  817  free
+  818  cat /proc/meminfo
+  819  vmstat
+  820  vmstat -d
+  821  mpstat
+  822  cat adicionar_logins.sh 
+  823  vi adicionar_logins.sh 
+  824  adicionar_logins.sh 
+  825  ./adicionar_logins.sh 
+  826  cat connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print i, "(" freq[i] ")"}' | sort 
+  827  cat connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort 
+  828  modprobe -l
+  829  modprobe l
+  830  procinfo
+  831  yum install procinfo
+  832  tail -F  /var/log/maillog 
+  833  free
+  834  uptime
+  835  systemctl postfix start
+  836  systemctl start postfix
+  837  tail -F  /var/log/maillog 
+  838  cat /var/log/maillog | grep UGFzc3dvcmQ6 | gawk '{print $7}' >>/root/brutforsers.txt
+  839  cat /var/log/maillog | grep UGFzc3dvcmQ6 | gawk '{print $7}' 
+  840  cat /var/log/maillog | grep UGFzc3dvcmQ6 | gawk '{print $7}' | tr -d \[ | tr -d \]
+  841  cat /var/log/maillog | grep UGFzc3dvcmQ6 | gawk '{print $7}' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \]
+  842  cat /var/log/maillog | grep UGFzc3dvcmQ6 | gawk '{print $7}' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] | tr -d :
+  843  tail -F  /var/log/maillog 
+  844  free
+  845  df -h
+  846  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  847  man pstree
+  848  pstree -cpN
+  849  pstree -cp
+  850  mc
+  851  tail -F /var/log/fail2ban.log
+  852  OB
+  853  pstree -cp
+  854  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix
+  855  cat /etc/host
+  856  cat /etc/hosts
+  857  fail2ban-client status
+  858  systemctl restart fail2ban
+  859  fail2ban-client status
+  860  fail2ban-client status recidive
+  861  systemctl restart fail2ban
+  862  fail2ban-client status recidive
+  863  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  864  iptables -L -v -n
+  865  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  866  iptables -I INPUT -s 185.199.226.32 -j DROP
+  867  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  868  lshal
+  869  lsusb
+  870  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  871  fail2ban-client status recidive
+  872  tail -F /var/log/fail2ban.log
+  873  tail -F  /var/log/maillog 
+  874  mc
+  875  fail2ban-client status recidive
+  876  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  877  tail -F /var/log/fail2ban.log
+  878  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  879  tail -F  /var/log/maillog 
+  880  tail -F  /var/log/fail2ban.log
+  881  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  882  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  883  mc
+  884  df -H
+  885  free
+  886  yptime
+  887  uptime
+  888  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  889  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  890  mc
+  891  tail -F  /var/log/maillog 
+  892  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  893  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  894  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  895  mc
+  896  iptables -L -v -n
+  897  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  898  iptables -I INPUT -s 45.133.99.6 -j DROP
+  899  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  900  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  901  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  902  mc
+  903  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  904  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  905  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  906  mc
+  907  cat connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort 
+  908  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort 
+  909  history | grep freq
+  910  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  911  iptables -I INPUT -s 37.49.230.118 -j DROP
+  912  iptables -I INPUT -s 103.207.39.163 -j DROP
+  913  iptables -I INPUT -s 23.92.17.52 -j DROP
+  914  iptables -I INPUT -s 71.6.146.185 -j DROP
+  915  cat ~/brutforsers.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  916  iptables -I INPUT -s 111.26.172.222 -j DROP
+  917  iptables -I INPUT -s 45.148.10.63 -j DROP
+  918  cat secure | frep root
+  919  cat secure | grep root
+  920  cat secure | grep 'Failed password for root from'
+  921  cat ~/adicionar_logins.sh 
+  922  cat secure | grep 'Failed password for root from' |  gawk '{print $10}' 
+  923  cat secure | grep 'Failed password for root from' |  gawk '{print $13}' 
+  924  cat secure | grep 'Failed password for root from' |  gawk '{print $12}' 
+  925  cat secure | grep 'Failed password for root from' |  gawk '{print $14}' 
+  926  cat secure | grep 'Failed password for root from' |  gawk '{print $15}' 
+  927  cat secure | grep 'Failed password for root from' |  gawk '{print $16}' 
+  928  cat secure | grep 'Failed password for root from' 
+  929  cat secure | grep 'Failed password for root from' |  gawk '{print $11}' 
+  930  vi ~/adicionar_logins.sh 
+  931  cat secure | grep 'Failed password for root from' |  gawk '{print $11}' | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  932  cat /var/log/secure | grep 'Failed password for root from' |  gawk '{print $11}' | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  933  cat ~/brutforsers.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  934  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  935  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  936  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  937  mc
+  938  cat /var/log/maillog | grep recip 
+  939  cat /var/log/maillog | grep recip
+  940  cat /var/log/maillog | grep recipient
+  941  iptables -L -v -n
+  942  iptables -L -v -n | grep 45.133.99.10
+  943  iptables -L -v -n | grep 107.6.183.162
+  944  iptables -I INPUT -s 107.6.183.162 -j DROP
+  945  iptables -L -v -n | grep 103.207.39.163
+  946  iptables -L -v -n | grep 45.148.10.82
+  947  iptables -I INPUT -s 45.148.10.82 -j DROP
+  948  iptables -L -v -n | grep 45.133.99.10
+  949  iptables -L -v -n | grep 
+  950  iptables -I INPUT -s 45.133.99.10 -j DROP
+  951  iptables -L -v -n | grep 45.133.99.10
+  952  iptables -L -v -n 
+  953  man iptables
+  954  iptables -L -v -n 
+  955  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  956  mc
+  957  doveadm move Trash mailbox INBOX from great@sumare.ru
+  958  doveadm fetch -u great body mailbox-guid $guid uid $uid
+  959  doveadm search -u asat mailbox inbox/* subject Logwatch unseen
+  960  doveadm search -u asat mailbox inbox subject 'Logwatch*' unseen
+  961  doveadm search -u asat@sumare.ru mailbox inbox subject 'Logwatch*' unseen
+  962  doveadm search -u asat@sumare.ru mailbox inbox subject 'Logwatch for vps28780nl (Linux)' unseen
+  963  doveadm search -u asat@sumare.ru mailbox inbox/* subject 'Logwatch for vps28780nl (Linux)' unseen
+  964  doveadm search -u asat@sumare.ru mailbox inbox\* subject 'Logwatch for vps28780nl (Linux)' unseen
+  965  doveadm log find
+  966  doveadm move Trash mailbox INBOX from great@sumare.ru
+  967  doveadm who
+  968  doveadm sis
+  969  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  970  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  971  pflogsumm -d yestuday --no-smtpd-warnings /var/log/maillog | head -n 200
+  972  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  973  mc
+  974  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  975  iptables -I INPUT -s 37.49.230.118 -j DROP
+  976  iptables -L -v -n 
+  977  tail /var/log/maillog
+  978  mc
+  979  dovecot -a | grep cach
+  980  dovecot -a | grep nega
+  981  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  982  iptables -I INPUT -s 51.91.206.201 -j DROP
+  983  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  984  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  985  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  986  cat ~/brutforsers.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  987  cat ~/ssh_brutforcers.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+  988  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  989  hostname
+  990  hostname -f
+  991  hostnamectl status
+  992  man biff
+  993  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+  994  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  995  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  996  mc
+  997  pflogsumm -d yesterday --no-smtpd-warnings /var/log/maillog | head -n 200
+  998  pflogsumm -d today --no-smtpd-warnings /var/log/maillog | head -n 200
+  999  fail2ban-client status sshd && fail2ban-client status postfix-sasl && fail2ban-client status postfix && fail2ban-client status recidive
+ 1000  cat ~/ssh_brutforcers.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+ 1001  cat ~/connect-disconnect-chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr
+ 1002  dovecot -a | grep cach
+ 1003  history >backups/2020-04-17_history.txt
