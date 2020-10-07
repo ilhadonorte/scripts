@@ -19,11 +19,11 @@ for (( number = 1; number <= $1; number++ ));
   for recipient in $(cat ./recipients.txt);
    do
     echo "Hello $recipient"
-    #mailx -s "`date --rfc-3339='date'` test e-mail" -a "./files/attache3.zip" $recipient < ./files/message3.txt
-    mailx -v -s "`date --rfc-3339='date'` Небольшое  письмо без вложения" zakaz@359831-ca13528.tmweb.ru < message.txt
-    mailx -v -s "`date --rfc-3339='date'`  Письмо побольше с вложением" -a attache1.docx zakaz@359831-ca13528.tmweb.ru < message1.txt
-    mailx -v -s "`date --rfc-3339='date'`  Письмо с вложением" -a attache2.jpg zakaz@359831-ca13528.tmweb.ru < message2.txt
-    mailx -v -s "`date --rfc-3339='date'` Письмо большое с большим вложением" -a attache3.pdf zakaz@359831-ca13528.tmweb.ru < message3.txt
+    #mailx -s "`date --rfc-3339='seconds'` test e-mail" -a "./files/attache3.zip" $recipient < ./files/message3.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Небольшое  письмо без вложения" zakaz@359831-ca13528.tmweb.ru < message.txt
+    mailx -v -s "`date --rfc-3339='seconds'`  Письмо побольше с вложением" -a attache1.docx zakaz@359831-ca13528.tmweb.ru < message1.txt
+    mailx -v -s "`date --rfc-3339='seconds'`  Письмо с вложением" -a attache2.jpg zakaz@359831-ca13528.tmweb.ru < message2.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Письмо большое с большим вложением" -a attache3.pdf zakaz@359831-ca13528.tmweb.ru < message3.txt
    done;
  done;
 
