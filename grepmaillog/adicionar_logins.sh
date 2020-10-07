@@ -17,5 +17,7 @@
 
 #cat /var/log/maillog | grep 'given' | gawk '{print $12}' | sed 's/.$//' | sort | uniq  >> /root/cenhas_furados.txt
 
+#ubuntu
 cat /var/log/mail.log | grep user= | sed 's|.*=||' | awk -F'@' '{print $1}' | sort | uniq >>/root/logins.txt
 cat /var/log/mail.log | grep 'given' | gawk '{print $12}' | sed 's/.$//' | sort | uniq >>/root/passwords.txt
+cat /var/log/mail.log | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] | sort  >>/root/connect-disconnect-chasto.txt
