@@ -1,0 +1,20 @@
+$TTL 86400
+@        IN     SOA     sumare.ru. sumare.ru.local. (
+                        2015092502
+                        43200
+                        3600
+                        3600000
+                        2592000 )
+
+        IN NS ns1.sumare.ru.
+        IN NS ns2.sumare.ru.
+        IN A 192.168.5.249
+        IN MX 10 mailer1.sumare.ru.
+        IN MX 40 mailer2.sumare.ru.
+
+dc1          IN A 192.168.5.248
+mailer1      IN A 192.168.5.249
+mailer2      IN A 192.168.5.250
+ns1          IN A 192.168.5.249
+ns2          IN A 192.168.5.249
+
