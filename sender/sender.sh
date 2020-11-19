@@ -3,7 +3,10 @@
 # ./sender 4
 # version 2020-09-18
 # input checking
+# version 2020-11-19, поправил итерации, намбер
+# отправлять указывая цифрой количество итераций:  ./sender.sh 3
  
+
 #if [ -n $1 ];
 # then 
 #  EMAIL_COUNTER = 2
@@ -18,12 +21,12 @@ for (( number = 1; number <= $1; number++ ));
  do
   for recipient in $(cat ./recipients.txt);
    do
-    echo "Hello $recipient"
-    #mailx -s "`date --rfc-3339='seconds'` test e-mail" -a "./files/attache3.zip" $recipient < ./files/message3.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Небольшое  письмо без вложения" zakaz@359831-ca13528.tmweb.ru < message.txt
-    mailx -v -s "`date --rfc-3339='seconds'`  Письмо побольше с вложением" -a attache1.docx zakaz@359831-ca13528.tmweb.ru < message1.txt
-    mailx -v -s "`date --rfc-3339='seconds'`  Письмо с вложением" -a attache2.jpg zakaz@359831-ca13528.tmweb.ru < message2.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Письмо большое с большим вложением" -a attache3.pdf zakaz@359831-ca13528.tmweb.ru < message3.txt
+    echo "Hello $recipient, iteration" $number
+    #mailx -s "`date --rfc-3339='seconds'` test e-mail" -a "./attache2.jpg" $recipient < ./message3.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Небольшое  письмо без вложения" $recipient < message.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Письмо побольше с вложением" -a attache1.docx $recipient < message1.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Письмо с вложением" -a attache2.jpg $recipient < message2.txt
+    mailx -v -s "`date --rfc-3339='seconds'` Письмо большое с большим вложением" -a attache3.pdf $recipient < message3.txt
    done;
  done;
 
