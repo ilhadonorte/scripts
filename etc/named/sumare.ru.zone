@@ -1,4 +1,4 @@
-$TTL 86400
+$TTL 30
 @        IN     SOA     sumare.ru. sumare.ru.local. (
                         2015092502
                         43200

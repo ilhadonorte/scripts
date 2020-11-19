@@ -1,0 +1,15 @@
+$TTL 30
+@          IN SOA ns1.sumare.ru. root.ns1.sumare.ru. (
+              20201117          ; Serial
+              21600             ; refresh
+              3600              ; retry
+              3600000           ; expire
+              86400 )           ; minimum
+
+           IN  NS ns1.sumare.ru.
+           IN  NS ns2.sumare.ru.
+
+; ----------- ENREGISTREMENTS -----------
+$ORIGIN 5.168.192.in-addr.arpa.
+249 IN PTR mailer1.sumare.ru.
+; ----------- ENREGISTREMENTS SPECIAUX -----------

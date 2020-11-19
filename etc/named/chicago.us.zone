@@ -1,4 +1,4 @@
-$TTL 86400
+$TTL 30
 @        IN     SOA     chicago.us. chicago.us.local. (
                         2015092502
                         43200
@@ -8,9 +8,9 @@ $TTL 86400
 
         IN NS ns1.chicago.us.
         IN NS ns2.chicago.us.
-        IN A 192.168.5.251
-        IN MX 10 mailer1.chicago.us.
-        IN MX 40 mailer2.chicago.us.
+        IN A 192.168.5.252
+        IN MX 20 mailer1.chicago.us.
+        IN MX 10 mailer2.chicago.us.
 
 mailer1      IN A 192.168.5.251
 mailer2      IN A 192.168.5.252
