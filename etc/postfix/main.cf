@@ -1,0 +1,76 @@
+# See /usr/share/postfix/main.cf.dist for a commented, more complete version
+
+
+# Debian specific:  Specifying a file name will cause the first
+# line of that file to be used as the name.  The Debian default
+# is /etc/mailname.
+#myorigin = /etc/mailname
+
+smtpd_banner = $myhostname ESMTP $mail_name (Ubuntu)
+biff = no
+
+# appending .domain is the MUA's job.
+append_dot_mydomain = no
+
+# Uncomment the next line to generate "delayed mail" warnings
+#delay_warning_time = 4h
+
+readme_directory = no
+
+# See http://www.postfix.org/COMPATIBILITY_README.html -- default to 2 on
+# fresh installs.
+compatibility_level = 2
+
+# TLS parameters
+#smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+#smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+smtpd_use_tls=yes
+smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+# See /usr/share/doc/postfix/TLS_README.gz in the postfix-doc package for
+# information on enabling SSL in the smtp client.
+
+smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_unauth_destination
+
+smtpd_recipient_restrictions = check_recipient_access hash:/etc/postfix/sumare-access-to-all  
+smtpd_restriction_classes = insiders_only
+insiders_only = check_sender_access hash:/etc/postfix/insiders, reject
+
+myhostname = mailer1.359831-ca13528.tmweb.ru
+#alias_maps = hash:/etc/aliases
+alias_maps = hash:/etc/postfix/sumare-aliases
+#alias_database = hash:/etc/aliases
+
+myorigin = 359831-ca13528.tmweb.ru
+#myorigin = /etc/mailname
+mydestination = 359831-ca13528.tmweb.ru, 359831-ca13528.tmweb.ru, localhost.tmweb.ru, , localhost
+relayhost = 
+mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 91.226.210.60/32 212.34.48.228/32 
+mailbox_size_limit = 500000000
+recipient_delimiter = +
+inet_interfaces = all
+inet_protocols = all
+#mail_spool_directory = /var/spool/mail
+message_size_limit = 10240000
+
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+#smtpd_relay_restrictions = permit_mynetworks, permit_sasl_authenticated, reject_unauth_destination
+broken_sasl_auth_clients = yes
+
+# TLS parameters
+smtpd_tls_cert_file=/etc/dovecot/private/dovecot.pem
+smtpd_tls_key_file=/etc/dovecot/private/dovecot.key
+smtpd_use_tls = yes
+smtp_use_tls = yes
+#
+
+mailbox_transport = lmtp:unix:private/dovecot-lmtp
+
+smtpd_milters = inet:localhost:11332
+non_smtpd_milters = inet:localhost:11332
+milter_protocol = 6
+milter_mail_macros = i {mail_addr} {client_addr} {client_name} {auth_authen}
+

@@ -22,11 +22,11 @@ for (( number = 1; number <= $1; number++ ));
   for recipient in $(cat ./recipients.txt);
    do
     echo "Hello $recipient, iteration" $number
-    #mailx -s "`date --rfc-3339='seconds'` test e-mail" -a "./attache2.jpg" $recipient < ./message3.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Небольшое  письмо без вложения" $recipient < message.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Письмо побольше с вложением" -a attache1.docx $recipient < message1.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Письмо с вложением" -a attache2.jpg $recipient < message2.txt
-    mailx -v -s "`date --rfc-3339='seconds'` Письмо большое с большим вложением" -a attache3.pdf $recipient < message3.txt
+   mailx -s "`date --rfc-3339='seconds'` test e-mail" -A "./attache2.jpg" $recipient < ./message3.txt
+   mailx -s "`date --rfc-3339='seconds'` Небольшое  письмо без вложения" $recipient < ./message.txt
+   # mailx -s "`date --rfc-3339='seconds'` Письмо побольше с вложением" -A attache1.docx $recipient < message1.txt
+   # mailx -s "`date --rfc-3339='seconds'` Письмо с вложением" -A attache2.jpg $recipient < message2.txt
+   #mailx -s "`date --rfc-3339='seconds'` Письмо большое с большим вложением" -A attache3.pdf $recipient < message3.txt
    done;
  done;
 

@@ -1,0 +1,41 @@
+#worker "log_helper" {
+#  count = 1;
+#}
+
+metric {
+name = "default";
+group {
+name = "local";
+symbol {
+weight = 5;
+description = "Sender ip listed in local ip blacklist";
+name = "LOCAL_BL_IP";
+}
+symbol {
+weight = 5;
+description = "Sender from listed in local from blacklist";
+name = "LOCAL_BL_FROM";
+}
+symbol {
+weight = 5;
+description = "Recipient listed in local rcpt blacklist";
+name = "LOCAL_BL_RCPT";
+}
+symbol {
+weight = -5;
+description = "Sender ip listed in local ip whitelist";
+name = "LOCAL_WL_IP";
+}
+symbol {
+weight = -10;
+description = "Sender from listed in local from whitelist";
+name = "LOCAL_WL_FROM";
+}
+symbol {
+weight = -5;
+description = "Recipient listed in local rcpt whitelist";
+name = "LOCAL_WL_RCPT";
+}
+}
+}
+
