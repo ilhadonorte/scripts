@@ -1,19 +1,19 @@
 [DEFAULT]
 # Ban hosts for one hour:
 bantime = 864000
-ignoreip = 127.0.0.1/8 172.16.10.0/24 91.226.210.60/32  212.34.48.208/32 91.188.184.77/32 185.119.56.39/32 31.42.189.108/32
+ignoreip = 127.0.0.1/8 91.226.210.60/32  212.34.48.208/32 91.188.184.77/32
 findtime = 86500
-maxretry = 2
+maxretry = 1
 # Override /etc/fail2ban/jail.d/00-firewalld.conf:
 banaction = iptables-multiport
 [sshd]
 enabled = true
 
-[postfix]
+#[postfix]
 #enabled = true
 
-[postfix-sasl] #banit mnogo srazu i menya tozhe
+#[postfix-sasl] #banit mnogo srazu
 #enabled = true
 
-[dovecot]
+#[dovecot]
 #enabled = true
