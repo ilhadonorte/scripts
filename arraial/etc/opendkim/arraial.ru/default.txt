@@ -1,0 +1,3 @@
+default._domainkey	IN	TXT	( "v=DKIM1; h=sha256; k=rsa; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRUZgbwfIvx+V17bmdhIhdpEs2mOgonsgtuGXrjN5kCLI6QUsJxSQmNvkWajM/W2kS9vW8YmmXNSshr/s+tNiFjUbuxQGZwBcKPAzUxJA3T8cr5T7HGFxUmi0ZpGYfMkF9J9fiCzyA5oRfeLJiF7KvbIBgUl4MYyqOerUbiGSUtB1+J5mFh+7s9Ct717YUWKTkaxcsIqcq72Zl"
+	  "fBgp9APWOJKqIpLWgXXzWfaCHRIt15RGtOba89KNTi4cNHWn3r5G/ft5jPGzhjT3aMRt5BvWzHCCl1gvfIzZ09wQ+vtI8cDdeuRhTjdJFX5+mZUNXPSf+Y57IoGSlOcM8Z8gMYCwIDAQAB" )  ; ----- DKIM key default for arraial.ru

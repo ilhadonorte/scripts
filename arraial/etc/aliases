@@ -1,0 +1,14 @@
+# /etc/aliases
+root: zakaz
+postmaster: zakaz
+mailer-daemon: zakaz
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
