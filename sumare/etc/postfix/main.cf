@@ -24,6 +24,14 @@ compatibility_level = 2
 # TLS parameters
 #smtpd_tls_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
 #smtpd_tls_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+
+smtpd_tls_cert_file=/etc/letsencrypt/live/mailer.sumare.ru/fullchain.pem
+smtpd_tls_key_file=/etc/letsencrypt/live/mailer.sumare.ru/privkey.pem
+smtpd_tls_security_level=may
+smtp_tls_security_level=may
+smtp_tls_CApath=/etc/ssl/certs
+
+
 smtpd_use_tls=yes
 smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
 smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
@@ -49,7 +57,7 @@ mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 91.226.210.60/32 212.3
 mailbox_size_limit = 500000000
 recipient_delimiter = +
 inet_interfaces = all
-inet_protocols = all
+inet_protocols = ipv4
 #mail_spool_directory = /var/spool/mail
 message_size_limit = 10240000
 
@@ -61,16 +69,23 @@ smtpd_relay_restrictions = permit_mynetworks permit_sasl_authenticated defer_una
 broken_sasl_auth_clients = yes
 
 # TLS parameters
-smtpd_tls_cert_file=/etc/dovecot/private/dovecot.pem
-smtpd_tls_key_file=/etc/dovecot/private/dovecot.key
+#smtpd_tls_cert_file=/etc/dovecot/private/dovecot.pem
+#smtpd_tls_key_file=/etc/dovecot/private/dovecot.key
 smtpd_use_tls = yes
 smtp_use_tls = yes
 #
 
 mailbox_transport = lmtp:unix:private/dovecot-lmtp
 
-smtpd_milters = inet:localhost:11332
-non_smtpd_milters = inet:localhost:11332
-milter_protocol = 6
-milter_mail_macros = i {mail_addr} {client_addr} {client_name} {auth_authen}
+milter_protocol = 2
+milter_default_action = accept
+#smtpd_milters = inet:localhost:11332, inet:localhost:12301
+smtpd_milters =  inet:localhost:12301
+#non_smtpd_milters = inet:localhost:11332, inet:localhost:12301
+non_smtpd_milters = inet:localhost:12301
+#milter_protocol = 6
+#milter_mail_macros = i {mail_addr} {client_addr} {client_name} {auth_authen}
+
+smtputf8_enable = no
+local_recipient_maps =
 

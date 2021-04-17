@@ -15,8 +15,8 @@ cat $resultspath/connect_chasto.txt | awk '{freq[$1]++} END{for (i in freq) prin
 echo =========================PASSWORDS=================================== >> $resultspath/report.txt
 cat $resultspath/passwords_chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr | head >>$resultspath/report.txt
 
-cat $resultspath/report.txt | mailx -s "`date --rfc-3339='seconds'` connects daily report" -r zakaz@359831-ca13528.tmweb.ru zakaz@359831-ca13528.tmweb.ru
-/usr/sbin/pflogsumm -d today $logpath | mailx -s "`date --rfc-3339='seconds'` emails daily report" -r zakaz@359831-ca13528.tmweb.ru zakaz@359831-ca13528.tmweb.ru
+cat $resultspath/report.txt | mailx -s "`date --rfc-3339='seconds'` connects daily report" -r e.goldstein@sumare.ru e.goldstein@sumare.ru
+/usr/sbin/pflogsumm -d today $logpath | mailx -s "`date --rfc-3339='seconds'` emails daily report" -r e.goldstein@sumare.ru e.goldstein@sumare.ru
 rm $resultspath/report.txt
 
 
