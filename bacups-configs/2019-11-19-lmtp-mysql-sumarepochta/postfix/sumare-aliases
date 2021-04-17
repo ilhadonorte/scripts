@@ -1,0 +1,4 @@
+all: great, asat
+root: asat
+postmaster: asat
+

@@ -1,0 +1,7 @@
+#hosts = 127.0.0.1
+hosts = unix:/var/run/mysqld/mysqld.sock
+dbname = sumare
+user = root
+password = !CNSadm159!#
+query = SELECT userid FROM users WHERE userid ='%s' AND active='Y'
+
