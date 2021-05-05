@@ -1,0 +1,16 @@
+
+
+============================================================
+vim /etc/motd
+
+cat /root/scripts/junk/logins_chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr | head
+cat /root/scripts/junk/connect_chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr | head
+cat /root/scripts/junk/passwords_chasto.txt | awk '{freq[$1]++} END{for (i in freq) print freq[i], i}' | sort -nr | head
+pflogsumm /var/log/mail.log -d today
+pflogsumm /var/log/mail.log -d yesterday
+lnav /var/log/mail.log
+tail -F /var/log/mail.log | ccze -A
+============================================================
+
+
+

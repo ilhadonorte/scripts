@@ -1,0 +1,98 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=DMOSK, CN=DMOSK/name=EasyRSA/emailAddress=zakaz@359831-ca13528.tmweb.ru
+        Validity
+            Not Before: Dec 30 11:21:38 2020 GMT
+            Not After : Dec 28 11:21:38 2030 GMT
+        Subject: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=DMOSK, CN=client1/name=EasyRSA/emailAddress=zakaz@359831-ca13528.tmweb.ru
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                RSA Public-Key: (2048 bit)
+                Modulus:
+                    00:d7:6d:24:5a:ef:d0:97:b0:96:5d:0a:70:c8:fb:
+                    95:46:99:db:80:a3:96:e9:eb:b8:ac:a6:6a:46:b5:
+                    0d:52:db:62:33:78:1d:78:cd:e5:c7:99:a4:cc:29:
+                    72:12:2b:ba:36:57:b8:9d:6b:34:c7:eb:00:11:96:
+                    4f:5e:37:a6:cc:28:97:9a:61:83:6b:4d:e2:a4:30:
+                    b0:a6:12:aa:82:d3:20:ec:4e:c7:5e:e7:f8:37:5c:
+                    63:ba:bd:95:a4:90:6f:8f:04:4e:80:2f:ae:29:56:
+                    01:2b:7c:35:29:5d:af:a7:dd:80:4b:0a:5d:91:62:
+                    e7:a2:b3:11:3f:70:24:0d:b5:13:de:0d:d4:b8:80:
+                    24:ff:e9:ff:54:77:60:eb:42:1a:55:c7:02:61:d6:
+                    ab:fe:25:c5:6a:c0:61:8d:4d:34:41:ce:ab:56:37:
+                    6d:60:83:a5:19:76:f6:e5:81:46:b6:9e:02:c3:dd:
+                    f9:48:fc:7d:33:98:81:a3:b9:64:d6:f2:7b:9f:45:
+                    2e:95:97:13:bf:71:00:08:53:44:28:37:a9:85:88:
+                    c3:cc:86:35:1d:d7:1e:08:77:28:0c:b1:ea:d7:32:
+                    2b:69:5f:0e:64:9c:c4:82:45:a3:d1:5d:cf:4b:86:
+                    da:73:42:8a:ef:23:93:79:db:50:84:68:8a:d0:62:
+                    f9:33
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                79:0A:01:49:A8:9F:02:2A:1A:C4:A6:CD:9B:F3:CB:04:3B:94:27:E6
+            X509v3 Authority Key Identifier: 
+                keyid:45:2B:D1:48:17:AE:94:D1:04:0C:AB:32:49:09:61:39:BF:A2:46:88
+                DirName:/C=US/ST=CA/L=SanFrancisco/O=Fort-Funston/OU=DMOSK/CN=DMOSK/name=EasyRSA/emailAddress=zakaz@359831-ca13528.tmweb.ru
+                serial:68:60:3D:21:74:DC:AE:50:D6:42:3D:E0:0C:EF:33:07:A8:3B:1B:EB
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:client1
+    Signature Algorithm: sha256WithRSAEncryption
+         44:44:92:f6:ba:2d:fc:69:f7:aa:a4:b4:ef:50:dd:a9:bf:24:
+         67:1c:1e:dd:63:24:ca:d2:b8:9c:f2:a7:d1:2c:5d:d5:51:a1:
+         2b:f8:88:21:6e:7a:3f:dd:ab:89:81:d3:ea:f4:36:21:97:26:
+         0e:fe:57:99:86:e0:09:3f:45:d1:7a:87:35:5d:39:50:cb:82:
+         7f:33:b0:09:e4:bc:6d:cc:7d:94:fb:0c:ce:af:f7:2d:9a:a5:
+         7c:2a:70:00:ba:a3:70:45:f5:f2:74:f2:29:9b:d0:63:a4:a1:
+         24:1b:75:1d:be:ae:61:1b:b9:3d:90:29:4c:3c:da:09:20:bc:
+         be:50:f0:07:3a:01:b3:74:30:cb:e7:cf:f3:2d:4c:43:b0:39:
+         73:a6:1d:55:29:14:b1:d1:ee:82:27:f8:63:ba:9b:26:9a:1b:
+         ba:13:6c:ce:ec:2e:78:9c:5a:aa:7e:a9:93:4d:f8:82:21:e7:
+         bd:73:fe:b2:54:d0:be:3e:4d:35:9b:0a:05:29:1f:47:33:ed:
+         14:11:f8:2e:7b:7b:79:1f:f4:b7:7f:a8:83:b1:d1:0d:60:30:
+         30:c3:32:b0:36:57:06:2e:42:9d:ed:4d:20:7c:61:23:ab:70:
+         a8:04:a6:2a:44:08:93:06:20:1f:ea:b4:ee:cd:f8:7d:a0:6b:
+         e8:f0:2f:b1
+-----BEGIN CERTIFICATE-----
+MIIFTzCCBDegAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBqDELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAkNBMRUwEwYDVQQHEwxTYW5GcmFuY2lzY28xFTATBgNVBAoTDEZv
+cnQtRnVuc3RvbjEOMAwGA1UECxMFRE1PU0sxDjAMBgNVBAMTBURNT1NLMRAwDgYD
+VQQpEwdFYXN5UlNBMSwwKgYJKoZIhvcNAQkBFh16YWthekAzNTk4MzEtY2ExMzUy
+OC50bXdlYi5ydTAeFw0yMDEyMzAxMTIxMzhaFw0zMDEyMjgxMTIxMzhaMIGqMQsw
+CQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFTATBgNVBAcTDFNhbkZyYW5jaXNjbzEV
+MBMGA1UEChMMRm9ydC1GdW5zdG9uMQ4wDAYDVQQLEwVETU9TSzEQMA4GA1UEAxMH
+Y2xpZW50MTEQMA4GA1UEKRMHRWFzeVJTQTEsMCoGCSqGSIb3DQEJARYdemFrYXpA
+MzU5ODMxLWNhMTM1MjgudG13ZWIucnUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDXbSRa79CXsJZdCnDI+5VGmduAo5bp67ispmpGtQ1S22IzeB14zeXH
+maTMKXISK7o2V7idazTH6wARlk9eN6bMKJeaYYNrTeKkMLCmEqqC0yDsTsde5/g3
+XGO6vZWkkG+PBE6AL64pVgErfDUpXa+n3YBLCl2RYueisxE/cCQNtRPeDdS4gCT/
+6f9Ud2DrQhpVxwJh1qv+JcVqwGGNTTRBzqtWN21gg6UZdvblgUa2ngLD3flI/H0z
+mIGjuWTW8nufRS6VlxO/cQAIU0QoN6mFiMPMhjUd1x4IdygMserXMitpXw5knMSC
+RaPRXc9LhtpzQorvI5N521CEaIrQYvkzAgMBAAGjggF+MIIBejAJBgNVHRMEAjAA
+MC0GCWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUw
+HQYDVR0OBBYEFHkKAUmonwIqGsSmzZvzywQ7lCfmMIHoBgNVHSMEgeAwgd2AFEUr
+0UgXrpTRBAyrMkkJYTm/okaIoYGupIGrMIGoMQswCQYDVQQGEwJVUzELMAkGA1UE
+CBMCQ0ExFTATBgNVBAcTDFNhbkZyYW5jaXNjbzEVMBMGA1UEChMMRm9ydC1GdW5z
+dG9uMQ4wDAYDVQQLEwVETU9TSzEOMAwGA1UEAxMFRE1PU0sxEDAOBgNVBCkTB0Vh
+c3lSU0ExLDAqBgkqhkiG9w0BCQEWHXpha2F6QDM1OTgzMS1jYTEzNTI4LnRtd2Vi
+LnJ1ghRoYD0hdNyuUNZCPeAM7zMHqDsb6zATBgNVHSUEDDAKBggrBgEFBQcDAjAL
+BgNVHQ8EBAMCB4AwEgYDVR0RBAswCYIHY2xpZW50MTANBgkqhkiG9w0BAQsFAAOC
+AQEARESS9rot/Gn3qqS071Ddqb8kZxwe3WMkytK4nPKn0Sxd1VGhK/iIIW56P92r
+iYHT6vQ2IZcmDv5XmYbgCT9F0XqHNV05UMuCfzOwCeS8bcx9lPsMzq/3LZqlfCpw
+ALqjcEX18nTyKZvQY6ShJBt1Hb6uYRu5PZApTDzaCSC8vlDwBzoBs3Qwy+fP8y1M
+Q7A5c6YdVSkUsdHugif4Y7qbJpobuhNszuwueJxaqn6pk034giHnvXP+slTQvj5N
+NZsKBSkfRzPtFBH4Lnt7eR/0t3+og7HRDWAwMMMysDZXBi5Cne1NIHxhI6twqASm
+KkQIkwYgH+q07s34faBr6PAvsQ==
+-----END CERTIFICATE-----

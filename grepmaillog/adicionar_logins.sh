@@ -23,4 +23,6 @@ cat $MAILLOG | grep recip | gawk '{print $24}' | awk -F'@' '{print $1}'| sed 's/
 
 cat $MAILLOG | grep user= | sed 's|.*=||' | awk -F'@' '{print $1}'  >> $RESULTS/logins_chasto.txt
 cat $MAILLOG | grep 'given' | gawk '{print $12}' | sed 's/.$//'  >> $RESULTS/passwords_chasto.txt
-cat $MAILLOG | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] >> $RESULTS/connect_chasto.txt
+#cat $MAILLOG | grep ' connect from' | awk '{ print $8; }' |  sed -r 's/^[^/[]+//' | tr -d \[ | tr -d \] >> $RESULTS/connect_chasto.txt
+# pervi sed ubiraet [ a vtoroy ]
+cat $MAILLOG |  grep ' connect from' |sed 's|.*\[||' | sed 's/\]//g'  >> $RESULTS/connect_chasto.txt
